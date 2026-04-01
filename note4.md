@@ -12,19 +12,19 @@ date: \today
   - in distribution (central limit theorem, CLT)
 - 変数変換  
 
-# 例： Exponential lifetime 
+# 例： Exponential lifetime (pp.245~)
 
-## 直接法
+# 直接法
 
 - Prob integral transformation
 - Box-Muller algorithm
 - Poisson variance
 
-## 間接法
+# 間接法
 
 - Beta RV
   
-## Accept/Reject Algorithm
+# Accept/Reject Algorithm
 
 - Beta RV
 

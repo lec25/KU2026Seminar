@@ -33,6 +33,11 @@ date: \today
 
 - 例： Beta-binomial Hierarchy
 
+## EM algorithm (pp.327)
+
+- 例： Multiple Poisson rates
+- 定理
+
 # 応用{-}
 
 - Bayes analysis (pp.371)
