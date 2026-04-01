@@ -1,10 +1,7 @@
 ---
-title: Hierarchical Model, Mixture Distribution（階層モデル、混合分布）
+title: 2 Hierarchical Model, Mixture Distribution（階層モデル、混合分布）
 date: \today
-<!-- geometry:
-- top=30truemm -->
 ---
-<!-- -top=30truemm の数字を変更することで，ヘッダーの余白幅を調整できます -->
 
 # 復習
 
@@ -14,30 +11,37 @@ date: \today
 # 階層モデル（pp.163~）
 
 
-- Binomial-Poisson Hierarchy（例）
+- 例： Binomial-Poisson Hierarchy
 
   - 分布と期待値
 
-## 性質：Conditional expectation（証明）
+## 定理１：Conditional expectation（証明）
 
 # Mixture Distributionの定義
 
-- Normal scale mixture distribution (現代数理 pp.65)
+- 例： Normal scale mixture distribution (現 pp.65)
 
-- Binomial-Poisson Hierarchy（例）
+- 例： Binomial-Poisson Hierarchy
 
   - 分布と期待値
 
-- Noncentral Chi2 distribution
+- 例： Noncentral Chi2 distribution
 
-- Beta-binomial Hierarchy
+- 例： Beta-binomial Hierarchy
 
-## 性質：Conditional variance identity（証明）
+## 定理２：Conditional variance identity（証明）
 
-- Beta-binomial Hierarchy（例）
+- 例： Beta-binomial Hierarchy
 
-# Bayes analysis (pp.371)
+# 応用{-}
 
-- Empirical Bayes analysis
+- Bayes analysis (pp.371)
 
-- Hierarchical Bayes analysis 
+  - Empirical Bayes analysis
+  - Hierarchical Bayes analysis 
+  - Gibbs sampling
+
+- GLMM: generalized linear mixed effects model（一般化線形混合モデル）
+  - その特例： ANOVA
+  - その一般化： Bayesian hierarchical model、階層ベイズ
+
