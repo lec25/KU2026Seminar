@@ -1,0 +1,34 @@
+# Order Statistics（順序統計量）
+
+## 復習{-}
+
+- 統計量
+- Rank
+- Nonparametric test (based on rank)
+  - Sign test/Wilcoxon Signed-rank test
+  - Wilcoxon rank-sum test/U test
+
+## 順序統計量（pp.226~；現 pp.101）
+
+- 定義、表記
+
+  - Sample range, sample median
+  - lower/upper quartile, interquartile range
+  
+## 定理1：順序統計量の確率（導出）
+
+## 定理2：順序統計量のCDF, PDF（導出）
+
+- 例： Uniform distribution
+
+## 定理3：順序統計量のJoint CDF, PDF（Exercise 5.27, 5.28）
+
+- 例： Midrange, range
+
+## 応用{-}
+
+- Kolmogorov–Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ
+
+  - Goodness-of-Fit Tests: Chi2 test
+
+

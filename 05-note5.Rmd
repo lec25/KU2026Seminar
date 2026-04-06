@@ -1,0 +1,35 @@
+# Sufficient Statistics（十分統計量）
+
+## 復習{-}
+
+- Exponential family
+- Statistic
+- Likelihood
+
+
+## Principles of data reduction{-}
+- Sufficiency principle
+- Likelihood principal
+- Formal likelihood Principal* 
+  - Formal sufficiency principle
+  - Conditional principle
+  - Formal likelihood principal
+- Equivariance Principle*
+
+## Sufficiency Principle
+
+## Sufficient Statistics
+
+## Ancillary Statistics
+
+## Complete Statistics
+
+## Basu' Theorem
+
+## Likelihood Principle
+
+## 応用：ベイズ推測法{-}
+
+- Bayesian Markov chain Monte Carlo method
+- STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
+- Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html
