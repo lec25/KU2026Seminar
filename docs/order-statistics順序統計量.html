@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Note 3 Order Statistics（順序統計量） | Seminar Notes 2026</title>
+  <meta name="description" content="Note 3 Order Statistics（順序統計量） | Seminar Notes 2026" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Note 3 Order Statistics（順序統計量） | Seminar Notes 2026" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Note 3 Order Statistics（順序統計量） | Seminar Notes 2026" />
+  
+  
+  
+
+<meta name="author" content="Yi Zhou" />
+
+
+<meta name="date" content="2026-04-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="hierarchical-model-mixture-distribution階層モデル混合分布.html"/>
+<link rel="next" href="generating-a-random-sample乱数の生成.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Seminar Notes 2026</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html"><i class="fa fa-check"></i><b>1</b> Exponential family（指数型分布族）</a>
+<ul>
+<li class="chapter" data-level="" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E5%BE%A9%E7%BF%92"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="1.1" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E6%8C%87%E6%95%B0%E5%9E%8B%E5%88%86%E5%B8%83%E6%97%8Fstatistical-inference-pp.111%E7%8F%BE%E4%BB%A3%E6%95%B0%E7%90%86%E7%B5%B1%E8%A8%88%E3%81%AE%E5%9F%BA%E7%A4%8E-pp.119"><i class="fa fa-check"></i><b>1.1</b> 指数型分布族（Statistical Inference pp.111~；現代数理統計の基礎 pp.119）</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E5%AE%9A%E7%90%86%EF%BC%91"><i class="fa fa-check"></i><b>1.1.1</b> 定理１</a></li>
+<li class="chapter" data-level="1.1.2" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E6%95%B0%E5%BC%8F%EF%BC%92"><i class="fa fa-check"></i><b>1.1.2</b> 数式２</a></li>
+<li class="chapter" data-level="1.1.3" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E6%8C%87%E6%95%B0%E5%9E%8B%E5%88%86%E5%B8%83%E6%97%8F-random-sample%E3%81%AE%E5%92%8Cpp.217"><i class="fa fa-check"></i><b>1.1.3</b> 指数型分布族 Random Sampleの和（pp.217）</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#location-and-scale-familypp.116"><i class="fa fa-check"></i><b>1.2</b> Location and Scale family（pp.116~）</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#location-family%E3%81%AE%E5%AE%9A%E7%BE%A9"><i class="fa fa-check"></i><b>1.2.1</b> Location familyの定義</a></li>
+<li class="chapter" data-level="1.2.2" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#scale-family-location-scale-family"><i class="fa fa-check"></i><b>1.2.2</b> Scale family, Location-Scale family</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88"><i class="fa fa-check"></i>メリット</a></li>
+<li class="chapter" data-level="" data-path="exponential-family指数型分布族.html"><a href="exponential-family指数型分布族.html#%E5%BF%9C%E7%94%A8"><i class="fa fa-check"></i>応用</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html"><i class="fa fa-check"></i><b>2</b> Hierarchical Model, Mixture Distribution（階層モデル、混合分布）</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#%E5%BE%A9%E7%BF%92-1"><i class="fa fa-check"></i><b>2.1</b> 復習</a></li>
+<li class="chapter" data-level="2.2" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#%E9%9A%8E%E5%B1%A4%E3%83%A2%E3%83%87%E3%83%ABpp.163"><i class="fa fa-check"></i><b>2.2</b> 階層モデル（pp.163~）</a></li>
+<li class="chapter" data-level="2.3" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#mixture-distribution%E3%81%AE%E5%AE%9A%E7%BE%A9"><i class="fa fa-check"></i><b>2.3</b> Mixture Distributionの定義</a></li>
+<li class="chapter" data-level="" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88-1"><i class="fa fa-check"></i>メリット</a></li>
+<li class="chapter" data-level="" data-path="hierarchical-model-mixture-distribution階層モデル混合分布.html"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#%E5%BF%9C%E7%94%A8-1"><i class="fa fa-check"></i>応用</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html"><i class="fa fa-check"></i><b>3</b> Order Statistics（順序統計量）</a>
+<ul>
+<li class="chapter" data-level="" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%BE%A9%E7%BF%92-2"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="3.1" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8Fpp.226%E7%8F%BE-pp.101"><i class="fa fa-check"></i><b>3.1</b> 順序統計量（pp.226~；現 pp.101）</a></li>
+<li class="chapter" data-level="3.2" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AE%E7%A2%BA%E7%8E%87%E5%B0%8E%E5%87%BA"><i class="fa fa-check"></i><b>3.2</b> 定理1：順序統計量の確率（導出）</a></li>
+<li class="chapter" data-level="3.3" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%862%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEcdf-pdf%E5%B0%8E%E5%87%BA"><i class="fa fa-check"></i><b>3.3</b> 定理2：順序統計量のCDF, PDF（導出）</a></li>
+<li class="chapter" data-level="3.4" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%863%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEjoint-cdf-pdfexercise-5.27-5.28"><i class="fa fa-check"></i><b>3.4</b> 定理3：順序統計量のJoint CDF, PDF（Exercise 5.27, 5.28）</a></li>
+<li class="chapter" data-level="" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%BF%9C%E7%94%A8-2"><i class="fa fa-check"></i>応用</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html"><i class="fa fa-check"></i><b>4</b> Generating a random sample（乱数の生成）</a>
+<ul>
+<li class="chapter" data-level="" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E5%BE%A9%E7%BF%92-3"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="4.1" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E4%BE%8B-exponential-lifetime-pp.245"><i class="fa fa-check"></i><b>4.1</b> 例： Exponential lifetime (pp.245~)</a></li>
+<li class="chapter" data-level="4.2" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E7%9B%B4%E6%8E%A5%E6%B3%95"><i class="fa fa-check"></i><b>4.2</b> 直接法</a></li>
+<li class="chapter" data-level="4.3" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E9%96%93%E6%8E%A5%E6%B3%95"><i class="fa fa-check"></i><b>4.3</b> 間接法</a></li>
+<li class="chapter" data-level="4.4" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#acceptreject-algorithm"><i class="fa fa-check"></i><b>4.4</b> Accept/Reject Algorithm</a></li>
+<li class="chapter" data-level="" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E5%BF%9C%E7%94%A8%E3%83%99%E3%82%A4%E3%82%BA%E6%8E%A8%E6%B8%AC%E6%B3%95"><i class="fa fa-check"></i>応用：ベイズ推測法</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html"><i class="fa fa-check"></i><b>5</b> Sufficient Statistics（十分統計量）</a>
+<ul>
+<li class="chapter" data-level="" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#%E5%BE%A9%E7%BF%92-4"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#principles-of-data-reduction"><i class="fa fa-check"></i>Principles of data reduction</a></li>
+<li class="chapter" data-level="5.1" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#sufficiency-principle"><i class="fa fa-check"></i><b>5.1</b> Sufficiency Principle</a></li>
+<li class="chapter" data-level="5.2" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#sufficient-statistics"><i class="fa fa-check"></i><b>5.2</b> Sufficient Statistics</a></li>
+<li class="chapter" data-level="5.3" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#ancillary-statistics"><i class="fa fa-check"></i><b>5.3</b> Ancillary Statistics</a></li>
+<li class="chapter" data-level="5.4" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#complete-statistics"><i class="fa fa-check"></i><b>5.4</b> Complete Statistics</a></li>
+<li class="chapter" data-level="5.5" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#basu-theorem"><i class="fa fa-check"></i><b>5.5</b> Basu’ Theorem</a></li>
+<li class="chapter" data-level="5.6" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#likelihood-principle"><i class="fa fa-check"></i><b>5.6</b> Likelihood Principle</a></li>
+<li class="chapter" data-level="" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#%E5%BF%9C%E7%94%A8%E3%83%99%E3%82%A4%E3%82%BA%E6%8E%A8%E6%B8%AC%E6%B3%95-1"><i class="fa fa-check"></i>応用：ベイズ推測法</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Seminar Notes 2026</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="order-statistics順序統計量" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Note 3</span> Order Statistics（順序統計量）<a href="order-statistics順序統計量.html#order-statistics%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="復習-2" class="section level2 unnumbered hasAnchor">
+<h2>復習<a href="order-statistics順序統計量.html#%E5%BE%A9%E7%BF%92-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>統計量</li>
+<li>Rank</li>
+<li>Nonparametric test (based on rank)
+<ul>
+<li>Sign test/Wilcoxon Signed-rank test</li>
+<li>Wilcoxon rank-sum test/U test</li>
+</ul></li>
+</ul>
+</div>
+<div id="順序統計量pp.226現-pp.101" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> 順序統計量（pp.226~；現 pp.101）<a href="order-statistics順序統計量.html#%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8Fpp.226%E7%8F%BE-pp.101" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>定義、表記</p>
+<ul>
+<li>Sample range, sample median</li>
+<li>lower/upper quartile, interquartile range</li>
+</ul></li>
+</ul>
+</div>
+<div id="定理1順序統計量の確率導出" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> 定理1：順序統計量の確率（導出）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AE%E7%A2%BA%E7%8E%87%E5%B0%8E%E5%87%BA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="定理2順序統計量のcdf-pdf導出" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> 定理2：順序統計量のCDF, PDF（導出）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%862%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEcdf-pdf%E5%B0%8E%E5%87%BA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>例： Uniform distribution</li>
+</ul>
+</div>
+<div id="定理3順序統計量のjoint-cdf-pdfexercise-5.27-5.28" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> 定理3：順序統計量のJoint CDF, PDF（Exercise 5.27, 5.28）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%863%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEjoint-cdf-pdfexercise-5.27-5.28" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>例： Midrange, range</li>
+</ul>
+</div>
+<div id="応用-2" class="section level2 unnumbered hasAnchor">
+<h2>応用<a href="order-statistics順序統計量.html#%E5%BF%9C%E7%94%A8-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Kolmogorov–Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ</p>
+<ul>
+<li>Goodness-of-Fit Tests: Chi2 test</li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="hierarchical-model-mixture-distribution階層モデル混合分布.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="generating-a-random-sample乱数の生成.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-note3.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
