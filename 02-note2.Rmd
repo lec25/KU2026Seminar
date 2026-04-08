@@ -1,5 +1,7 @@
 # Hierarchical Model, Mixture Distribution（階層モデル、混合分布）
 
+2026-4-22
+
 ## 復習
 
 - 条件付き確率（密度）関数、周辺確率（密度）関数
@@ -12,7 +14,7 @@
 
   - 分布と期待値
 
-#### 定理１：Conditional expectation（証明）
+### 定理１：Conditional expectation（証明）
 
 ## Mixture Distributionの定義
 
@@ -26,16 +28,16 @@
 
 - 例： Beta-binomial Hierarchy
 
-#### 定理２：Conditional variance identity（証明）
+### 定理２：Conditional variance identity（証明）
 
 - 例： Beta-binomial Hierarchy
 
-#### EM algorithm (pp.327)
+### EM algorithm (pp.327)
 
 - 例： Multiple Poisson rates
-- 定理
-- EM vs MLE
-- Missing data issue
+- 定理*
+- EM vs MLE*
+- Missing data issue*
 
 ## コメント{-}
 

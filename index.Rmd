@@ -2,17 +2,16 @@
 title: "Seminar Notes 2026"
 author: "Yi Zhou"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+output:
+  html_document:
+    df_print: paged
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-# description: |
-#   This is a minimal example of using the bookdown package to write a book.
-#   The HTML output format for this example is bookdown::gitbook,
-#   set in the _output.yml file.
-link-citations: yes
-github-repo: rstudio/bookdown-demo
+bibliography:
+- book.bib
+- packages.bib
+link-citations: true
+github-repo: "rstudio/bookdown-demo"
+site: bookdown::bookdown_site
 ---
 
 # 資料{-}
@@ -54,4 +53,32 @@ github-repo: rstudio/bookdown-demo
 
   - R and RStudio installation: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
   - 授業の資料：[https://lec25.github.io/2026-1H609/](https://lec25.github.io/2026-1H609/)
+  - etc.
 
+## Python{-}
+
+  - [https://yongks.github.io/python_bookdown/](https://yongks.github.io/python_bookdown/)
+  - etc.
+  
+## Journals{-}
+
+- Biostatistics
+
+  - [Biometrics](https://academic.oup.com/biometrics)
+  - [Statistics in Medicine](https://onlinelibrary.wiley.com/journal/10970258)
+  - [Biostatistics](https://academic.oup.com/biostatistics)
+  - [Statistical Methods in Medical Research (SMMR)](https://journals.sagepub.com/home/SMM)
+  - [Journal of the American Statistical Association (JASA)](https://www.tandfonline.com/journals/uasa20)
+  - [Biometrika](https://academic.oup.com/biomet)
+  - [Journal of the Royal Statistical Society, Series B (Statistical Methodology) (JRSS B)](https://academic.oup.com/jrsssb?login=true)
+  - [計量生物学](https://www.jstage.jst.go.jp/browse/jjb/-char/ja)
+  - [統計数理](https://www.ism.ac.jp/editsec/toukei/index.html)
+  
+- Epidemiology
+  
+  - [American Journal of Epidemiology](https://academic.oup.com/aje)
+  
+- Bioinformatics
+
+  - [Briefings in Bioinformatics](https://academic.oup.com/bib)
+  - [Bioinformatics](https://academic.oup.com/bioinformatics)

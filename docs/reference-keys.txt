@@ -30,4 +30,3 @@ ancillary-statistics
 complete-statistics
 basu-theorem
 likelihood-principle
-url-your-book-url-like-httpsbookdown.orgyihuibookdown

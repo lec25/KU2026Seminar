@@ -27,7 +27,7 @@
 
 ## 応用{-}
 
-- Kolmogorov–Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ
+- Kolmogorov–Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ)
 
   - Goodness-of-Fit Tests: Chi2 test
 
