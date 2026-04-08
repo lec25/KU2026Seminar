@@ -37,7 +37,7 @@
 - EM vs MLE
 - Missing data issue
 
-## メリット{-}
+## コメント{-}
 
 - Posterior 分布の導出
 - 不確実性を階層的にモデル化

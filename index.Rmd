@@ -15,6 +15,43 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-# About{-}
+# 資料{-}
 
-This provide the outline of every seminar.
+## スケジュール{-}
+
+[Click here to download XLSX](Schedule2026.xlsx) 
+
+## 参考資料{-}
+
+  - Statistical Inference [Click here to open PDF](Textbook/Casella_Berger_Statistical_Inference.pdf)
+    - 現代数理統計学 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000105174;jsessionid=77611339D268556CDFB560D03E30F354?0)
+    - 現代数理統計学の基礎 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000050917?2)
+    - 一般化線形モデル [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031957?19)
+    - ベイズ計算統計学 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027079?21)
+
+  - Fundamentals of Biostatistics [Click here to open PDF](Textbook/Fundamentals of Biostatistics (8th Edition).pdf)
+    - 医学統計学ハンドブック [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000068387?3)
+    - 生存時間解析 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000117213?16)
+    - 実験計画法と分散分析 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027080?23)
+    
+  - An introduction to statistical learning 
+    - with application in Python [Click here to open PDF](Textbook/ISLP_pyhton.pdf)
+    - with application in R [Click here to open PDF](Textbook/ISLR_R.pdf)
+    
+  - 統計的因果推論 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000034381?17)
+    - 欠測データの統計解析 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18)
+    
+  - Others [Click here to open folder](Textbook/.)
+  
+  
+## 数理科学入門Slides{-}
+
+  - Slides [Click here to open PDF](Stats-slides/allslides.pdf)
+  - Notes [Click here to open PDF](Stats-slides/allnotes.pdf)
+  - Others [Click here to open folder](Stats-slides/.)
+
+## R{-}
+
+  - R and RStudio installation: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+  - 授業の資料：[https://lec25.github.io/2026-1H609/](https://lec25.github.io/2026-1H609/)
+

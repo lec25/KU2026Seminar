@@ -1,0 +1,1717 @@
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.10.1)  8 APR 2026 11:31
+ system commands enabled.
+**merge.tex
+(./merge.tex
+LaTeX2e <2025-06-01>
+L3 programming layer <2025-05-26>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/zhouy/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Program Files/MiKTeX/tex/luatex/luaotfload/fontloader-2023-12-28.
+lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/zhouy/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. ("C:/Program Files/MiKT
+eX/tex/latex/base/article.cls"
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+("C:/Program Files/MiKTeX/tex/latex/base/size10.clo"
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/zhouy/AppData/Local/M
+iKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen147
+)
+("C:/Program Files/MiKTeX/tex/latex/pdfpages/pdfpages.sty"
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+("C:/Program Files/MiKTeX/tex/latex/base/ifthen.sty"
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+("C:/Program Files/MiKTeX/tex/latex/tools/calc.sty"
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count283
+\calc@Cskip=\skip53
+)
+("C:/Program Files/MiKTeX/tex/latex/eso-pic/eso-pic.sty"
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen150
+\ESO@tempdimb=\dimen151
+
+("C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty"
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+("C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty"
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+("C:/Program Files/MiKTeX/tex/latex/graphics-cfg/color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+("C:/Program Files/MiKTeX/tex/latex/graphics-def/luatex.def"
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+)
+("C:/Program Files/MiKTeX/tex/latex/graphics/mathcolor.ltx")
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+))
+("C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty"
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+)
+("C:/Program Files/MiKTeX/tex/latex/graphics/graphicx.sty"
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:/Program Files/MiKTeX/tex/latex/graphics/graphics.sty"
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+("C:/Program Files/MiKTeX/tex/latex/graphics/trig.sty"
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+("C:/Program Files/MiKTeX/tex/latex/graphics-cfg/graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+)
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+\AM@pagewidth=\dimen154
+\AM@pageheight=\dimen155
+\AM@fboxrule=\dimen156
+
+("C:/Program Files/MiKTeX/tex/latex/pdfpages/ppluatex.def"
+File: ppluatex.def 2025/07/23 v0.6g Pdfpages driver for LuaTeX (AM)
+)
+\pdfpages@includegraphics@status=\count285
+\AM@pagebox=\box53
+\AM@global@opts=\toks18
+\AM@pagecnt=\count286
+\AM@toc@title=\toks19
+\AM@lof@heading=\toks20
+\c@AM@survey=\count287
+\AM@templatesizebox=\box54
+)
+("C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-luatex.def"
+File: l3backend-luatex.def 2025-04-14 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count288
+Inserting `l3color' in `luaotfload.parse_color'.)
+(./merge.aux)
+\openout1 = merge.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+ ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count289
+\scratchdimen=\dimen157
+\scratchbox=\box55
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen158
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks22
+) ("C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+("C:/Program Files/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg"
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+("C:/Program Files/MiKTeX/tex/latex/pdflscape/pdflscape.sty"
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+("C:/Program Files/MiKTeX/tex/latex/pdflscape/pdflscape-nometadata.sty"
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+("C:/Program Files/MiKTeX/tex/generic/iftex/iftex.sty"
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+("C:/Program Files/MiKTeX/tex/latex/graphics/lscape.sty"
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<Stat-note1.pdf, id=1, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf>
+Package luatex.def Info: Stat-note1.pdf  used on input line 19.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note1.pdf, id=3, page=1, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 1>
+Package luatex.def Info: Stat-note1.pdf , page1 used on input line 19.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 1>
+Package luatex.def Info: Stat-note1.pdf , page1 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 1>
+Package luatex.def Info: Stat-note1.pdf , page1 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 1>
+Package luatex.def Info: Stat-note1.pdf , page1 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 1>
+Package luatex.def Info: Stat-note1.pdf , page1 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[1
+
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=90, page=2, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 2>
+Package luatex.def Info: Stat-note1.pdf , page2 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 2>
+Package luatex.def Info: Stat-note1.pdf , page2 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 2>
+Package luatex.def Info: Stat-note1.pdf , page2 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[2
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=124, page=3, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 3>
+Package luatex.def Info: Stat-note1.pdf , page3 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 3>
+Package luatex.def Info: Stat-note1.pdf , page3 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 3>
+Package luatex.def Info: Stat-note1.pdf , page3 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[3
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=145, page=4, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 4>
+Package luatex.def Info: Stat-note1.pdf , page4 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 4>
+Package luatex.def Info: Stat-note1.pdf , page4 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 4>
+Package luatex.def Info: Stat-note1.pdf , page4 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[4
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=179, page=5, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 5>
+Package luatex.def Info: Stat-note1.pdf , page5 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 5>
+Package luatex.def Info: Stat-note1.pdf , page5 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 5>
+Package luatex.def Info: Stat-note1.pdf , page5 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[5
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=189, page=6, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 6>
+Package luatex.def Info: Stat-note1.pdf , page6 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 6>
+Package luatex.def Info: Stat-note1.pdf , page6 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 6>
+Package luatex.def Info: Stat-note1.pdf , page6 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[6
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=193, page=7, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 7>
+Package luatex.def Info: Stat-note1.pdf , page7 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 7>
+Package luatex.def Info: Stat-note1.pdf , page7 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 7>
+Package luatex.def Info: Stat-note1.pdf , page7 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[7
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=205, page=8, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 8>
+Package luatex.def Info: Stat-note1.pdf , page8 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 8>
+Package luatex.def Info: Stat-note1.pdf , page8 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 8>
+Package luatex.def Info: Stat-note1.pdf , page8 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[8
+
+<./Stat-note1.pdf>]
+<Stat-note1.pdf, id=223, page=9, 1228.59pt x 794.97pt>
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 9>
+Package luatex.def Info: Stat-note1.pdf , page9 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 9>
+Package luatex.def Info: Stat-note1.pdf , page9 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note1.pdf Graphic file (type pdf)
+<use Stat-note1.pdf, page 9>
+Package luatex.def Info: Stat-note1.pdf , page9 used on input line 19.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[9
+
+<./Stat-note1.pdf>]
+<Stat-note2.pdf, id=245, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf>
+Package luatex.def Info: Stat-note2.pdf  used on input line 20.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note2.pdf, id=247, page=1, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 1>
+Package luatex.def Info: Stat-note2.pdf , page1 used on input line 20.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 1>
+Package luatex.def Info: Stat-note2.pdf , page1 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 1>
+Package luatex.def Info: Stat-note2.pdf , page1 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 1>
+Package luatex.def Info: Stat-note2.pdf , page1 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 1>
+Package luatex.def Info: Stat-note2.pdf , page1 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[10
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=357, page=2, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 2>
+Package luatex.def Info: Stat-note2.pdf , page2 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 2>
+Package luatex.def Info: Stat-note2.pdf , page2 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 2>
+Package luatex.def Info: Stat-note2.pdf , page2 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[11
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=386, page=3, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 3>
+Package luatex.def Info: Stat-note2.pdf , page3 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 3>
+Package luatex.def Info: Stat-note2.pdf , page3 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 3>
+Package luatex.def Info: Stat-note2.pdf , page3 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[12
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=412, page=4, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 4>
+Package luatex.def Info: Stat-note2.pdf , page4 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 4>
+Package luatex.def Info: Stat-note2.pdf , page4 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 4>
+Package luatex.def Info: Stat-note2.pdf , page4 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[13
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=425, page=5, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 5>
+Package luatex.def Info: Stat-note2.pdf , page5 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 5>
+Package luatex.def Info: Stat-note2.pdf , page5 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 5>
+Package luatex.def Info: Stat-note2.pdf , page5 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[14
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=456, page=6, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 6>
+Package luatex.def Info: Stat-note2.pdf , page6 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 6>
+Package luatex.def Info: Stat-note2.pdf , page6 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 6>
+Package luatex.def Info: Stat-note2.pdf , page6 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[15
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=477, page=7, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 7>
+Package luatex.def Info: Stat-note2.pdf , page7 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 7>
+Package luatex.def Info: Stat-note2.pdf , page7 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 7>
+Package luatex.def Info: Stat-note2.pdf , page7 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[16
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=492, page=8, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 8>
+Package luatex.def Info: Stat-note2.pdf , page8 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 8>
+Package luatex.def Info: Stat-note2.pdf , page8 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 8>
+Package luatex.def Info: Stat-note2.pdf , page8 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[17
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=502, page=9, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 9>
+Package luatex.def Info: Stat-note2.pdf , page9 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 9>
+Package luatex.def Info: Stat-note2.pdf , page9 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 9>
+Package luatex.def Info: Stat-note2.pdf , page9 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[18
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=514, page=10, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 10>
+Package luatex.def Info: Stat-note2.pdf , page10 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 10>
+Package luatex.def Info: Stat-note2.pdf , page10 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 10>
+Package luatex.def Info: Stat-note2.pdf , page10 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[19
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=522, page=11, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 11>
+Package luatex.def Info: Stat-note2.pdf , page11 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 11>
+Package luatex.def Info: Stat-note2.pdf , page11 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 11>
+Package luatex.def Info: Stat-note2.pdf , page11 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[20
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=529, page=12, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 12>
+Package luatex.def Info: Stat-note2.pdf , page12 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 12>
+Package luatex.def Info: Stat-note2.pdf , page12 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 12>
+Package luatex.def Info: Stat-note2.pdf , page12 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[21
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=557, page=13, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 13>
+Package luatex.def Info: Stat-note2.pdf , page13 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 13>
+Package luatex.def Info: Stat-note2.pdf , page13 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 13>
+Package luatex.def Info: Stat-note2.pdf , page13 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[22
+
+<./Stat-note2.pdf>]
+<Stat-note2.pdf, id=578, page=14, 1228.59pt x 794.97pt>
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 14>
+Package luatex.def Info: Stat-note2.pdf , page14 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 14>
+Package luatex.def Info: Stat-note2.pdf , page14 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note2.pdf Graphic file (type pdf)
+<use Stat-note2.pdf, page 14>
+Package luatex.def Info: Stat-note2.pdf , page14 used on input line 20.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[23
+
+<./Stat-note2.pdf>]
+<Stat-note3.pdf, id=589, 1228.59pt x 794.97pt>
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf>
+Package luatex.def Info: Stat-note3.pdf  used on input line 21.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note3.pdf, id=591, page=1, 1228.59pt x 794.97pt>
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 1>
+Package luatex.def Info: Stat-note3.pdf , page1 used on input line 21.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 1>
+Package luatex.def Info: Stat-note3.pdf , page1 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 1>
+Package luatex.def Info: Stat-note3.pdf , page1 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 1>
+Package luatex.def Info: Stat-note3.pdf , page1 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 1>
+Package luatex.def Info: Stat-note3.pdf , page1 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[24
+
+<./Stat-note3.pdf>]
+<Stat-note3.pdf, id=674, page=2, 1228.59pt x 794.97pt>
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 2>
+Package luatex.def Info: Stat-note3.pdf , page2 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 2>
+Package luatex.def Info: Stat-note3.pdf , page2 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 2>
+Package luatex.def Info: Stat-note3.pdf , page2 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[25
+
+<./Stat-note3.pdf>]
+<Stat-note3.pdf, id=726, page=3, 1228.59pt x 794.97pt>
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 3>
+Package luatex.def Info: Stat-note3.pdf , page3 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 3>
+Package luatex.def Info: Stat-note3.pdf , page3 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note3.pdf Graphic file (type pdf)
+<use Stat-note3.pdf, page 3>
+Package luatex.def Info: Stat-note3.pdf , page3 used on input line 21.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[26
+
+<./Stat-note3.pdf>]
+<Stat-note4-new.pdf, id=736, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf>
+Package luatex.def Info: Stat-note4-new.pdf  used on input line 22.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note4-new.pdf, id=738, page=1, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 1>
+Package luatex.def Info: Stat-note4-new.pdf , page1 used on input line 22.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 1>
+Package luatex.def Info: Stat-note4-new.pdf , page1 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 1>
+Package luatex.def Info: Stat-note4-new.pdf , page1 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 1>
+Package luatex.def Info: Stat-note4-new.pdf , page1 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 1>
+Package luatex.def Info: Stat-note4-new.pdf , page1 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[27
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=821, page=2, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 2>
+Package luatex.def Info: Stat-note4-new.pdf , page2 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 2>
+Package luatex.def Info: Stat-note4-new.pdf , page2 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 2>
+Package luatex.def Info: Stat-note4-new.pdf , page2 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[28
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=846, page=3, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 3>
+Package luatex.def Info: Stat-note4-new.pdf , page3 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 3>
+Package luatex.def Info: Stat-note4-new.pdf , page3 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 3>
+Package luatex.def Info: Stat-note4-new.pdf , page3 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[29
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=880, page=4, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 4>
+Package luatex.def Info: Stat-note4-new.pdf , page4 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 4>
+Package luatex.def Info: Stat-note4-new.pdf , page4 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 4>
+Package luatex.def Info: Stat-note4-new.pdf , page4 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[30
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=898, page=5, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 5>
+Package luatex.def Info: Stat-note4-new.pdf , page5 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 5>
+Package luatex.def Info: Stat-note4-new.pdf , page5 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 5>
+Package luatex.def Info: Stat-note4-new.pdf , page5 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[31
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=906, page=6, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 6>
+Package luatex.def Info: Stat-note4-new.pdf , page6 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 6>
+Package luatex.def Info: Stat-note4-new.pdf , page6 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 6>
+Package luatex.def Info: Stat-note4-new.pdf , page6 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[32
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=934, page=7, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 7>
+Package luatex.def Info: Stat-note4-new.pdf , page7 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 7>
+Package luatex.def Info: Stat-note4-new.pdf , page7 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 7>
+Package luatex.def Info: Stat-note4-new.pdf , page7 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[33
+
+<./Stat-note4-new.pdf>]
+<Stat-note4-new.pdf, id=949, page=8, 1228.59pt x 794.97pt>
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 8>
+Package luatex.def Info: Stat-note4-new.pdf , page8 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 8>
+Package luatex.def Info: Stat-note4-new.pdf , page8 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note4-new.pdf Graphic file (type pdf)
+<use Stat-note4-new.pdf, page 8>
+Package luatex.def Info: Stat-note4-new.pdf , page8 used on input line 22.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[34
+
+<./Stat-note4-new.pdf>]
+<Stat-note5.pdf, id=955, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf>
+Package luatex.def Info: Stat-note5.pdf  used on input line 23.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note5.pdf, id=957, page=1, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 1>
+Package luatex.def Info: Stat-note5.pdf , page1 used on input line 23.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 1>
+Package luatex.def Info: Stat-note5.pdf , page1 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 1>
+Package luatex.def Info: Stat-note5.pdf , page1 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 1>
+Package luatex.def Info: Stat-note5.pdf , page1 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 1>
+Package luatex.def Info: Stat-note5.pdf , page1 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[35
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1032, page=2, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 2>
+Package luatex.def Info: Stat-note5.pdf , page2 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 2>
+Package luatex.def Info: Stat-note5.pdf , page2 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 2>
+Package luatex.def Info: Stat-note5.pdf , page2 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[36
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1068, page=3, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 3>
+Package luatex.def Info: Stat-note5.pdf , page3 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 3>
+Package luatex.def Info: Stat-note5.pdf , page3 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 3>
+Package luatex.def Info: Stat-note5.pdf , page3 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[37
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1082, page=4, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 4>
+Package luatex.def Info: Stat-note5.pdf , page4 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 4>
+Package luatex.def Info: Stat-note5.pdf , page4 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 4>
+Package luatex.def Info: Stat-note5.pdf , page4 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[38
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1092, page=5, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 5>
+Package luatex.def Info: Stat-note5.pdf , page5 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 5>
+Package luatex.def Info: Stat-note5.pdf , page5 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 5>
+Package luatex.def Info: Stat-note5.pdf , page5 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[39
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1114, page=6, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 6>
+Package luatex.def Info: Stat-note5.pdf , page6 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 6>
+Package luatex.def Info: Stat-note5.pdf , page6 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 6>
+Package luatex.def Info: Stat-note5.pdf , page6 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[40
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1142, page=7, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 7>
+Package luatex.def Info: Stat-note5.pdf , page7 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 7>
+Package luatex.def Info: Stat-note5.pdf , page7 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 7>
+Package luatex.def Info: Stat-note5.pdf , page7 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[41
+
+<./Stat-note5.pdf>]
+<Stat-note5.pdf, id=1161, page=8, 1228.59pt x 794.97pt>
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 8>
+Package luatex.def Info: Stat-note5.pdf , page8 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 8>
+Package luatex.def Info: Stat-note5.pdf , page8 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note5.pdf Graphic file (type pdf)
+<use Stat-note5.pdf, page 8>
+Package luatex.def Info: Stat-note5.pdf , page8 used on input line 23.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[42
+
+<./Stat-note5.pdf>]
+<Stat-note6.pdf, id=1165, 1228.59pt x 794.97pt>
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf>
+Package luatex.def Info: Stat-note6.pdf  used on input line 24.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note6.pdf, id=1167, page=1, 1228.59pt x 794.97pt>
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 1>
+Package luatex.def Info: Stat-note6.pdf , page1 used on input line 24.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 1>
+Package luatex.def Info: Stat-note6.pdf , page1 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 1>
+Package luatex.def Info: Stat-note6.pdf , page1 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 1>
+Package luatex.def Info: Stat-note6.pdf , page1 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 1>
+Package luatex.def Info: Stat-note6.pdf , page1 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[43
+
+<./Stat-note6.pdf>]
+<Stat-note6.pdf, id=1242, page=2, 1228.59pt x 794.97pt>
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 2>
+Package luatex.def Info: Stat-note6.pdf , page2 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 2>
+Package luatex.def Info: Stat-note6.pdf , page2 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 2>
+Package luatex.def Info: Stat-note6.pdf , page2 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[44
+
+<./Stat-note6.pdf>]
+<Stat-note6.pdf, id=1283, page=3, 1228.59pt x 794.97pt>
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 3>
+Package luatex.def Info: Stat-note6.pdf , page3 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 3>
+Package luatex.def Info: Stat-note6.pdf , page3 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6.pdf Graphic file (type pdf)
+<use Stat-note6.pdf, page 3>
+Package luatex.def Info: Stat-note6.pdf , page3 used on input line 24.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[45
+
+<./Stat-note6.pdf>]
+<Stat-note6-2.pdf, id=1293, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf>
+Package luatex.def Info: Stat-note6-2.pdf  used on input line 25.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note6-2.pdf, id=1295, page=1, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 1>
+Package luatex.def Info: Stat-note6-2.pdf , page1 used on input line 25.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 1>
+Package luatex.def Info: Stat-note6-2.pdf , page1 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 1>
+Package luatex.def Info: Stat-note6-2.pdf , page1 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 1>
+Package luatex.def Info: Stat-note6-2.pdf , page1 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 1>
+Package luatex.def Info: Stat-note6-2.pdf , page1 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[46
+
+<./Stat-note6-2.pdf>]
+<Stat-note6-2.pdf, id=1384, page=2, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 2>
+Package luatex.def Info: Stat-note6-2.pdf , page2 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 2>
+Package luatex.def Info: Stat-note6-2.pdf , page2 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 2>
+Package luatex.def Info: Stat-note6-2.pdf , page2 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[47
+
+<./Stat-note6-2.pdf>]
+<Stat-note6-2.pdf, id=1457, page=3, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 3>
+Package luatex.def Info: Stat-note6-2.pdf , page3 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 3>
+Package luatex.def Info: Stat-note6-2.pdf , page3 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 3>
+Package luatex.def Info: Stat-note6-2.pdf , page3 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[48
+
+<./Stat-note6-2.pdf>]
+<Stat-note6-2.pdf, id=1464, page=4, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 4>
+Package luatex.def Info: Stat-note6-2.pdf , page4 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 4>
+Package luatex.def Info: Stat-note6-2.pdf , page4 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 4>
+Package luatex.def Info: Stat-note6-2.pdf , page4 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[49
+
+<./Stat-note6-2.pdf>]
+<Stat-note6-2.pdf, id=1468, page=5, 1228.59pt x 794.97pt>
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 5>
+Package luatex.def Info: Stat-note6-2.pdf , page5 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 5>
+Package luatex.def Info: Stat-note6-2.pdf , page5 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note6-2.pdf Graphic file (type pdf)
+<use Stat-note6-2.pdf, page 5>
+Package luatex.def Info: Stat-note6-2.pdf , page5 used on input line 25.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[50
+
+<./Stat-note6-2.pdf>]
+<Stat-note7.pdf, id=1487, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf>
+Package luatex.def Info: Stat-note7.pdf  used on input line 26.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note7.pdf, id=1489, page=1, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 1>
+Package luatex.def Info: Stat-note7.pdf , page1 used on input line 26.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 1>
+Package luatex.def Info: Stat-note7.pdf , page1 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 1>
+Package luatex.def Info: Stat-note7.pdf , page1 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 1>
+Package luatex.def Info: Stat-note7.pdf , page1 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 1>
+Package luatex.def Info: Stat-note7.pdf , page1 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[51
+
+<./Stat-note7.pdf>]
+<Stat-note7.pdf, id=1604, page=2, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 2>
+Package luatex.def Info: Stat-note7.pdf , page2 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 2>
+Package luatex.def Info: Stat-note7.pdf , page2 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 2>
+Package luatex.def Info: Stat-note7.pdf , page2 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[52
+
+<./Stat-note7.pdf>]
+<Stat-note7.pdf, id=1622, page=3, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 3>
+Package luatex.def Info: Stat-note7.pdf , page3 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 3>
+Package luatex.def Info: Stat-note7.pdf , page3 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 3>
+Package luatex.def Info: Stat-note7.pdf , page3 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[53
+
+<./Stat-note7.pdf>]
+<Stat-note7.pdf, id=1639, page=4, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 4>
+Package luatex.def Info: Stat-note7.pdf , page4 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 4>
+Package luatex.def Info: Stat-note7.pdf , page4 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 4>
+Package luatex.def Info: Stat-note7.pdf , page4 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[54
+
+<./Stat-note7.pdf>]
+<Stat-note7.pdf, id=1663, page=5, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 5>
+Package luatex.def Info: Stat-note7.pdf , page5 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 5>
+Package luatex.def Info: Stat-note7.pdf , page5 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 5>
+Package luatex.def Info: Stat-note7.pdf , page5 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[55
+
+<./Stat-note7.pdf>]
+<Stat-note7.pdf, id=1673, page=6, 1228.59pt x 794.97pt>
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 6>
+Package luatex.def Info: Stat-note7.pdf , page6 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 6>
+Package luatex.def Info: Stat-note7.pdf , page6 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note7.pdf Graphic file (type pdf)
+<use Stat-note7.pdf, page 6>
+Package luatex.def Info: Stat-note7.pdf , page6 used on input line 26.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[56
+
+<./Stat-note7.pdf>]
+<Stat-note8.pdf, id=1682, 1228.59pt x 794.97pt>
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf>
+Package luatex.def Info: Stat-note8.pdf  used on input line 27.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note8.pdf, id=1684, page=1, 1228.59pt x 794.97pt>
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 1>
+Package luatex.def Info: Stat-note8.pdf , page1 used on input line 27.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 1>
+Package luatex.def Info: Stat-note8.pdf , page1 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 1>
+Package luatex.def Info: Stat-note8.pdf , page1 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 1>
+Package luatex.def Info: Stat-note8.pdf , page1 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 1>
+Package luatex.def Info: Stat-note8.pdf , page1 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[57
+
+<./Stat-note8.pdf>]
+<Stat-note8.pdf, id=1693, page=2, 1228.59pt x 794.97pt>
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 2>
+Package luatex.def Info: Stat-note8.pdf , page2 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 2>
+Package luatex.def Info: Stat-note8.pdf , page2 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 2>
+Package luatex.def Info: Stat-note8.pdf , page2 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[58
+
+<./Stat-note8.pdf>]
+<Stat-note8.pdf, id=1697, page=3, 1228.59pt x 794.97pt>
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 3>
+Package luatex.def Info: Stat-note8.pdf , page3 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 3>
+Package luatex.def Info: Stat-note8.pdf , page3 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 3>
+Package luatex.def Info: Stat-note8.pdf , page3 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[59
+
+<./Stat-note8.pdf>]
+<Stat-note8.pdf, id=1701, page=4, 1228.59pt x 794.97pt>
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 4>
+Package luatex.def Info: Stat-note8.pdf , page4 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 4>
+Package luatex.def Info: Stat-note8.pdf , page4 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note8.pdf Graphic file (type pdf)
+<use Stat-note8.pdf, page 4>
+Package luatex.def Info: Stat-note8.pdf , page4 used on input line 27.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[60
+
+<./Stat-note8.pdf>]
+<Stat-note9.pdf, id=1705, 1228.59pt x 794.97pt>
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf>
+Package luatex.def Info: Stat-note9.pdf  used on input line 28.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note9.pdf, id=1707, page=1, 1228.59pt x 794.97pt>
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 1>
+Package luatex.def Info: Stat-note9.pdf , page1 used on input line 28.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 1>
+Package luatex.def Info: Stat-note9.pdf , page1 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 1>
+Package luatex.def Info: Stat-note9.pdf , page1 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 1>
+Package luatex.def Info: Stat-note9.pdf , page1 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 1>
+Package luatex.def Info: Stat-note9.pdf , page1 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[61
+
+<./Stat-note9.pdf>]
+<Stat-note9.pdf, id=1717, page=2, 1228.59pt x 794.97pt>
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 2>
+Package luatex.def Info: Stat-note9.pdf , page2 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 2>
+Package luatex.def Info: Stat-note9.pdf , page2 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9.pdf Graphic file (type pdf)
+<use Stat-note9.pdf, page 2>
+Package luatex.def Info: Stat-note9.pdf , page2 used on input line 28.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[62
+
+<./Stat-note9.pdf>]
+<Stat-note9-2.pdf, id=1721, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf>
+Package luatex.def Info: Stat-note9-2.pdf  used on input line 29.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note9-2.pdf, id=1723, page=1, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 1>
+Package luatex.def Info: Stat-note9-2.pdf , page1 used on input line 29.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 1>
+Package luatex.def Info: Stat-note9-2.pdf , page1 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 1>
+Package luatex.def Info: Stat-note9-2.pdf , page1 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 1>
+Package luatex.def Info: Stat-note9-2.pdf , page1 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 1>
+Package luatex.def Info: Stat-note9-2.pdf , page1 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[63
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1734, page=2, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 2>
+Package luatex.def Info: Stat-note9-2.pdf , page2 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 2>
+Package luatex.def Info: Stat-note9-2.pdf , page2 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 2>
+Package luatex.def Info: Stat-note9-2.pdf , page2 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[64
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1738, page=3, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 3>
+Package luatex.def Info: Stat-note9-2.pdf , page3 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 3>
+Package luatex.def Info: Stat-note9-2.pdf , page3 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 3>
+Package luatex.def Info: Stat-note9-2.pdf , page3 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[65
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1744, page=4, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 4>
+Package luatex.def Info: Stat-note9-2.pdf , page4 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 4>
+Package luatex.def Info: Stat-note9-2.pdf , page4 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 4>
+Package luatex.def Info: Stat-note9-2.pdf , page4 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[66
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1750, page=5, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 5>
+Package luatex.def Info: Stat-note9-2.pdf , page5 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 5>
+Package luatex.def Info: Stat-note9-2.pdf , page5 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 5>
+Package luatex.def Info: Stat-note9-2.pdf , page5 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[67
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1756, page=6, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 6>
+Package luatex.def Info: Stat-note9-2.pdf , page6 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 6>
+Package luatex.def Info: Stat-note9-2.pdf , page6 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 6>
+Package luatex.def Info: Stat-note9-2.pdf , page6 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[68
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1762, page=7, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 7>
+Package luatex.def Info: Stat-note9-2.pdf , page7 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 7>
+Package luatex.def Info: Stat-note9-2.pdf , page7 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 7>
+Package luatex.def Info: Stat-note9-2.pdf , page7 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[69
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1768, page=8, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 8>
+Package luatex.def Info: Stat-note9-2.pdf , page8 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 8>
+Package luatex.def Info: Stat-note9-2.pdf , page8 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 8>
+Package luatex.def Info: Stat-note9-2.pdf , page8 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[70
+
+<./Stat-note9-2.pdf>]
+<Stat-note9-2.pdf, id=1772, page=9, 1228.59pt x 794.97pt>
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 9>
+Package luatex.def Info: Stat-note9-2.pdf , page9 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 9>
+Package luatex.def Info: Stat-note9-2.pdf , page9 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note9-2.pdf Graphic file (type pdf)
+<use Stat-note9-2.pdf, page 9>
+Package luatex.def Info: Stat-note9-2.pdf , page9 used on input line 29.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[71
+
+<./Stat-note9-2.pdf>]
+<Stat-note10.pdf, id=1777, 1228.59pt x 794.97pt>
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf>
+Package luatex.def Info: Stat-note10.pdf  used on input line 30.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+<Stat-note10.pdf, id=1779, page=1, 1228.59pt x 794.97pt>
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 1>
+Package luatex.def Info: Stat-note10.pdf , page1 used on input line 30.
+(luatex.def)             Requested size: 1228.587pt x 794.96806pt.
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 1>
+Package luatex.def Info: Stat-note10.pdf , page1 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 1>
+Package luatex.def Info: Stat-note10.pdf , page1 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 1>
+Package luatex.def Info: Stat-note10.pdf , page1 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 1>
+Package luatex.def Info: Stat-note10.pdf , page1 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[72
+
+<./Stat-note10.pdf>]
+<Stat-note10.pdf, id=1791, page=2, 1228.59pt x 794.97pt>
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 2>
+Package luatex.def Info: Stat-note10.pdf , page2 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 2>
+Package luatex.def Info: Stat-note10.pdf , page2 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 2>
+Package luatex.def Info: Stat-note10.pdf , page2 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[73
+
+<./Stat-note10.pdf>]
+<Stat-note10.pdf, id=1797, page=3, 1228.59pt x 794.97pt>
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 3>
+Package luatex.def Info: Stat-note10.pdf , page3 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 3>
+Package luatex.def Info: Stat-note10.pdf , page3 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+
+
+File: Stat-note10.pdf Graphic file (type pdf)
+<use Stat-note10.pdf, page 3>
+Package luatex.def Info: Stat-note10.pdf , page3 used on input line 30.
+(luatex.def)             Requested size: 1229.16815pt x 795.3441pt.
+[74
+
+<./Stat-note10.pdf>] (./merge.aux)
+ ***********
+LaTeX2e <2025-06-01>
+L3 programming layer <2025-05-26>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 3949 strings out of 470209
+ 100000,662416 words of node,token memory allocated
+ 416 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 50 glue_spec,
+ 4 attribute_list, 1 write nodes
+   avail lists: 2:93,3:15,4:10,5:63,6:2,7:46,9:96
+ 31715 multiletter control sequences out of 65536+600000
+ 15 fonts using 723367 bytes
+ 72i,17n,75p,214b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on merge.pdf (74 pages, 55286718 bytes).
+
+PDF statistics: 1803 PDF objects out of 2073 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

@@ -52,7 +52,7 @@
 - 応用：Location-Scale pivot (pp.427；現 pp.172)　for constructing CI
 
 
-## メリット{-}
+## コメント{-}
 
 - 確率分布を統一的に表現
 - 共通の性質を解析可能
