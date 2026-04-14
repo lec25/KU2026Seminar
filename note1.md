@@ -1,7 +1,6 @@
----
-title: 1 Exponential family（指数型分布族）
-date: \today
----
+
+# Exponential family（指数型分布族）
+
 
 # 復習{-}
 
@@ -59,7 +58,7 @@ date: \today
 - 確率分布を統一的に表現
 - 共通の性質を解析可能
 - 期待値・分散の導出が容易
-- データとパラメータの分離 --> Sufficient Statistics（十分統計量、後に）
+- データとパラメータの分離 --> Sufficient Statistics（十分統計量、第5-6回）
 - 
 
 # 応用{-}

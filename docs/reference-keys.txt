@@ -7,7 +7,6 @@ location-and-scale-familypp.116
 location-familyの定義
 scale-family-location-scale-family
 hierarchical-model-mixture-distribution階層モデル混合分布
-復習-1
 階層モデルpp.163
 定理１conditional-expectation証明
 mixture-distributionの定義

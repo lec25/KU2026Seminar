@@ -20,6 +20,11 @@ site: bookdown::bookdown_site
 
 [Click here to download XLSX](Schedule2026.xlsx) 
 
+## 本ゼミの資料{-}
+
+  - PDF [Click here to open folder](pdf/.)
+  - Notes [Click here to open folder](notes/.)
+
 ## 参考資料{-}
 
   - Statistical Inference [Click here to open PDF](Textbook/Casella_Berger_Statistical_Inference.pdf)
@@ -43,11 +48,11 @@ site: bookdown::bookdown_site
   - Others [Click here to open folder](Textbook/.)
   
   
-## 数理科学入門Slides{-}
+## 数理科学入門（統計学）の資料{-}
 
   - Slides [Click here to open PDF](Stats-slides/allslides.pdf)
   - Notes [Click here to open PDF](Stats-slides/allnotes.pdf)
-  - Others [Click here to open folder](Stats-slides/.)
+  - 毎回の資料 [Click here to open folder](Stats-slides/slides-split/.)
 
 ## R{-}
 

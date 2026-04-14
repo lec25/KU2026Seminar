@@ -1,9 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-
 # Exponential family（指数型分布族）
 
 2026-4-15
@@ -65,7 +59,7 @@ output:
 - 確率分布を統一的に表現
 - 共通の性質を解析可能
 - 期待値・分散の導出が容易
-- データとパラメータの分離 --> Sufficient Statistics（十分統計量、後に）
+- データとパラメータの分離 --> Sufficient Statistics（十分統計量、第5-6回）
 
 ## 応用{-}
 

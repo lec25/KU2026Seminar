@@ -2,7 +2,7 @@
 
 2026-4-22
 
-## 復習
+## 復習{-}
 
 - 条件付き確率（密度）関数、周辺確率（密度）関数
 - Bayesian Rule, Bayes estimators
@@ -24,7 +24,7 @@
 
   - 分布と期待値
 
-- 例： Noncentral Chi2 distribution
+- 例： Noncentral $\chi^2$ distribution
 
 - 例： Beta-binomial Hierarchy
 

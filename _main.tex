@@ -1,0 +1,690 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{book}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Seminar Notes 2026},
+  pdfauthor={Yi Zhou},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Seminar Notes 2026}
+\author{Yi Zhou}
+\date{2026-04-14}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter*{資料}\label{ux8cc7ux6599}
+\addcontentsline{toc}{chapter}{資料}
+
+\section*{スケジュール}\label{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}
+\addcontentsline{toc}{section}{スケジュール}
+
+\href{Schedule2026.xlsx}{Click here to download XLSX}
+
+\section*{参考資料}\label{ux53c2ux8003ux8cc7ux6599}
+\addcontentsline{toc}{section}{参考資料}
+
+\begin{itemize}
+\tightlist
+\item
+  Statistical Inference \href{Textbook/Casella_Berger_Statistical_Inference.pdf}{Click here to open PDF}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    現代数理統計学 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000105174;jsessionid=77611339D268556CDFB560D03E30F354?0}{Link to Kobe Univ. Lib}
+  \item
+    現代数理統計学の基礎 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000050917?2}{Link to Kobe Univ. Lib}
+  \item
+    一般化線形モデル \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031957?19}{Link to Kobe Univ. Lib}
+  \item
+    ベイズ計算統計学 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027079?21}{Link to Kobe Univ. Lib}
+  \end{itemize}
+\item
+  Fundamentals of Biostatistics \href{Textbook/Fundamentals\%20of\%20Biostatistics\%20(8th\%20Edition).pdf}{Click here to open PDF}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    医学統計学ハンドブック \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000068387?3}{Link to Kobe Univ. Lib}
+  \item
+    生存時間解析 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000117213?16}{Link to Kobe Univ. Lib}
+  \item
+    実験計画法と分散分析 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027080?23}{Link to Kobe Univ. Lib}
+  \end{itemize}
+\item
+  An introduction to statistical learning
+
+  \begin{itemize}
+  \tightlist
+  \item
+    with application in Python \href{Textbook/ISLP_pyhton.pdf}{Click here to open PDF}
+  \item
+    with application in R \href{Textbook/ISLR_R.pdf}{Click here to open PDF}
+  \end{itemize}
+\item
+  統計的因果推論 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000034381?17}{Link to Kobe Univ. Lib}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    欠測データの統計解析 \href{https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18}{Link to Kobe Univ. Lib}
+  \end{itemize}
+\item
+  Others \href{Textbook/.}{Click here to open folder}
+\end{itemize}
+
+\section*{数理科学入門Slides}\label{ux6570ux7406ux79d1ux5b66ux5165ux9580slides}
+\addcontentsline{toc}{section}{数理科学入門Slides}
+
+\begin{itemize}
+\tightlist
+\item
+  Slides \href{Stats-slides/allslides.pdf}{Click here to open PDF}
+\item
+  Notes \href{Stats-slides/allnotes.pdf}{Click here to open PDF}
+\item
+  Others \href{Stats-slides/.}{Click here to open folder}
+\end{itemize}
+
+\section*{R}\label{r}
+\addcontentsline{toc}{section}{R}
+
+\begin{itemize}
+\tightlist
+\item
+  R and RStudio installation: \url{https://posit.co/download/rstudio-desktop/}
+\item
+  授業の資料：\url{https://lec25.github.io/2026-1H609/}
+\item
+  etc.
+\end{itemize}
+
+\section*{Python}\label{python}
+\addcontentsline{toc}{section}{Python}
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://yongks.github.io/python_bookdown/}
+\item
+  etc.
+\end{itemize}
+
+\section*{Journals}\label{journals}
+\addcontentsline{toc}{section}{Journals}
+
+\begin{itemize}
+\item
+  Biostatistics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://academic.oup.com/biometrics}{Biometrics}
+  \item
+    \href{https://onlinelibrary.wiley.com/journal/10970258}{Statistics in Medicine}
+  \item
+    \href{https://academic.oup.com/biostatistics}{Biostatistics}
+  \item
+    \href{https://journals.sagepub.com/home/SMM}{Statistical Methods in Medical Research (SMMR)}
+  \item
+    \href{https://www.tandfonline.com/journals/uasa20}{Journal of the American Statistical Association (JASA)}
+  \item
+    \href{https://academic.oup.com/biomet}{Biometrika}
+  \item
+    \href{https://academic.oup.com/jrsssb?login=true}{Journal of the Royal Statistical Society, Series B (Statistical Methodology) (JRSS B)}
+  \item
+    \href{https://www.jstage.jst.go.jp/browse/jjb/-char/ja}{計量生物学}
+  \item
+    \href{https://www.ism.ac.jp/editsec/toukei/index.html}{統計数理}
+  \end{itemize}
+\item
+  Epidemiology
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://academic.oup.com/aje}{American Journal of Epidemiology}
+  \end{itemize}
+\item
+  Bioinformatics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://academic.oup.com/bib}{Briefings in Bioinformatics}
+  \item
+    \href{https://academic.oup.com/bioinformatics}{Bioinformatics}
+  \end{itemize}
+\end{itemize}
+
+\chapter{Exponential family（指数型分布族）}\label{exponential-familyux6307ux6570ux578bux5206ux5e03ux65cf}
+
+2026-4-15
+
+\section*{復習}\label{ux5fa9ux7fd2}
+\addcontentsline{toc}{section}{復習}
+
+\begin{itemize}
+\tightlist
+\item
+  確率空間、確率変数
+\item
+  離散型、連続型確率変数 (Random Variable, RV)
+\item
+  確率(密度)関数、分布：Probaility Mass Function (PMF) vs.~Probability Density Function (PDF) \(\rightarrow\) Cumulative Distribution Function (CDF)
+\item
+  離散型、連続型代表的な分布、分布の形、近似関係
+\item
+  分布の期待値、分散 \(\rightarrow\) Moment (Moment Generating Function)
+\item
+  Random variable vs.~Random sample（無作為標本）
+\item
+  PDF, PMF vs.~Likelihood（尤度関数）
+\end{itemize}
+
+\section{指数型分布族（Statistical Inference pp.111\textasciitilde；現代数理統計の基礎 pp.119）}\label{ux6307ux6570ux578bux5206ux5e03ux65cfstatistical-inference-pp.111ux73feux4ee3ux6570ux7406ux7d71ux8a08ux306eux57faux790e-pp.119}
+
+\begin{itemize}
+\tightlist
+\item
+  数式１
+\item
+  連続型の例：Normal（証明）, Gamma, Beta, Exponential, Chi-square
+\item
+  離散型の例：Binomial（証明）, Bernoulli, Poisson, Negative binomial, Multinomial
+\end{itemize}
+
+\subsection{定理１}\label{ux5b9aux7406uxff11}
+
+\begin{itemize}
+\tightlist
+\item
+  期待値、分散の導出（課題：証明 \(\rightarrow\) Exercise 3.31, 3.32）
+
+  \begin{itemize}
+  \tightlist
+  \item
+    例：Binomial, Normal exponential family （証明）
+  \end{itemize}
+\end{itemize}
+
+\subsection{数式２}\label{ux6570ux5f0fuxff12}
+
+\begin{itemize}
+\tightlist
+\item
+  Normal exponential family
+\item
+  Curved exponential family*
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Poisson distribution（例）*
+  \end{itemize}
+\end{itemize}
+
+\subsection{指数型分布族 Random Sampleの和（pp.217）}\label{ux6307ux6570ux578bux5206ux5e03ux65cf-random-sampleux306eux548cpp.217}
+
+\begin{itemize}
+\tightlist
+\item
+  数式
+\item
+  例： Sum of Bernoulli RVs
+\end{itemize}
+
+\section{Location and Scale family（pp.116\textasciitilde）}\label{location-and-scale-familypp.116}
+
+\begin{itemize}
+\tightlist
+\item
+  定理： Location, scaleによってPDFのを構成する
+\end{itemize}
+
+\subsection{Location familyの定義}\label{location-familyux306eux5b9aux7fa9}
+
+\begin{itemize}
+\tightlist
+\item
+  例： Exponential location family
+\end{itemize}
+
+\subsection{Scale family, Location-Scale family}\label{scale-family-location-scale-family}
+
+\begin{itemize}
+\item
+  定理１：分布の導出
+
+  \(X=\sigma Z+\mu \Rightarrow f_Z(z)\rightarrow f_X(x)\)
+\item
+  定理２：\(X\) の期待値、分散
+
+  \begin{itemize}
+  \tightlist
+  \item
+    性質：\(X\) の確率
+  \end{itemize}
+\item
+  応用：Location-Scale pivot (pp.427；現 pp.172)　for constructing CI
+\end{itemize}
+
+\section*{コメント}\label{ux30b3ux30e1ux30f3ux30c8}
+\addcontentsline{toc}{section}{コメント}
+
+\begin{itemize}
+\tightlist
+\item
+  確率分布を統一的に表現
+\item
+  共通の性質を解析可能
+\item
+  期待値・分散の導出が容易
+\item
+  データとパラメータの分離 --\textgreater{} Sufficient Statistics（十分統計量、後に）
+\end{itemize}
+
+\section*{応用}\label{ux5fdcux7528}
+\addcontentsline{toc}{section}{応用}
+
+\begin{itemize}
+\tightlist
+\item
+  Generalized linear model（一般化線形モデル）
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exponential familyの標準形（canonical form） --\textgreater{} link function
+  \end{itemize}
+\end{itemize}
+
+\chapter{Hierarchical Model, Mixture Distribution（階層モデル、混合分布）}\label{hierarchical-model-mixture-distributionux968eux5c64ux30e2ux30c7ux30ebux6df7ux5408ux5206ux5e03}
+
+2026-4-22
+
+\section{復習}\label{ux5fa9ux7fd2-1}
+
+\begin{itemize}
+\tightlist
+\item
+  条件付き確率（密度）関数、周辺確率（密度）関数
+\item
+  Bayesian Rule, Bayes estimators
+\end{itemize}
+
+\section{階層モデル（pp.163\textasciitilde）}\label{ux968eux5c64ux30e2ux30c7ux30ebpp.163}
+
+\begin{itemize}
+\item
+  例： Binomial-Poisson Hierarchy
+
+  \begin{itemize}
+  \tightlist
+  \item
+    分布と期待値
+  \end{itemize}
+\end{itemize}
+
+\subsection{定理１：Conditional expectation（証明）}\label{ux5b9aux7406uxff11conditional-expectationux8a3cux660e}
+
+\section{Mixture Distributionの定義}\label{mixture-distributionux306eux5b9aux7fa9}
+
+\begin{itemize}
+\item
+  例： Normal scale mixture distribution (現 pp.65)
+\item
+  例： Binomial-Poisson Hierarchy
+
+  \begin{itemize}
+  \tightlist
+  \item
+    分布と期待値
+  \end{itemize}
+\item
+  例： Noncentral Chi2 distribution
+\item
+  例： Beta-binomial Hierarchy
+\end{itemize}
+
+\subsection{定理２：Conditional variance identity（証明）}\label{ux5b9aux7406uxff12conditional-variance-identityux8a3cux660e}
+
+\begin{itemize}
+\tightlist
+\item
+  例： Beta-binomial Hierarchy
+\end{itemize}
+
+\subsection{EM algorithm (pp.327)}\label{em-algorithm-pp.327}
+
+\begin{itemize}
+\tightlist
+\item
+  例： Multiple Poisson rates
+\item
+  定理*
+\item
+  EM vs MLE*
+\item
+  Missing data issue*
+\end{itemize}
+
+\section*{コメント}\label{ux30b3ux30e1ux30f3ux30c8-1}
+\addcontentsline{toc}{section}{コメント}
+
+\begin{itemize}
+\tightlist
+\item
+  Posterior 分布の導出
+\item
+  不確実性を階層的にモデル化
+\end{itemize}
+
+\section*{応用}\label{ux5fdcux7528-1}
+\addcontentsline{toc}{section}{応用}
+
+\begin{itemize}
+\item
+  Bayes analysis (pp.371)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Empirical Bayes analysis
+  \item
+    Hierarchical Bayes analysis
+  \item
+    Gibbs sampling
+  \end{itemize}
+\item
+  GLMM: generalized linear mixed effects model（一般化線形混合モデル）
+
+  \begin{itemize}
+  \tightlist
+  \item
+    その特例： ANOVA
+  \item
+    その一般化： Bayesian hierarchical model、階層ベイズ
+  \end{itemize}
+\item
+  Meta-analysis　データの統合
+\end{itemize}
+
+\chapter{Order Statistics（順序統計量）}\label{order-statisticsux9806ux5e8fux7d71ux8a08ux91cf}
+
+\section*{復習}\label{ux5fa9ux7fd2-2}
+\addcontentsline{toc}{section}{復習}
+
+\begin{itemize}
+\tightlist
+\item
+  統計量
+\item
+  Rank
+\item
+  Nonparametric test (based on rank)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sign test/Wilcoxon Signed-rank test
+  \item
+    Wilcoxon rank-sum test/U test
+  \end{itemize}
+\end{itemize}
+
+\section{順序統計量（pp.226\textasciitilde；現 pp.101）}\label{ux9806ux5e8fux7d71ux8a08ux91cfpp.226ux73fe-pp.101}
+
+\begin{itemize}
+\item
+  定義、表記
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sample range, sample median
+  \item
+    lower/upper quartile, interquartile range
+  \end{itemize}
+\end{itemize}
+
+\section{定理1：順序統計量の確率（導出）}\label{ux5b9aux74061ux9806ux5e8fux7d71ux8a08ux91cfux306eux78baux7387ux5c0eux51fa}
+
+\section{定理2：順序統計量のCDF, PDF（導出）}\label{ux5b9aux74062ux9806ux5e8fux7d71ux8a08ux91cfux306ecdf-pdfux5c0eux51fa}
+
+\begin{itemize}
+\tightlist
+\item
+  例： Uniform distribution
+\end{itemize}
+
+\section{定理3：順序統計量のJoint CDF, PDF（Exercise 5.27, 5.28）}\label{ux5b9aux74063ux9806ux5e8fux7d71ux8a08ux91cfux306ejoint-cdf-pdfexercise-5.27-5.28}
+
+\begin{itemize}
+\tightlist
+\item
+  例： Midrange, range
+\end{itemize}
+
+\section*{応用}\label{ux5fdcux7528-2}
+\addcontentsline{toc}{section}{応用}
+
+\begin{itemize}
+\item
+  Kolmogorov--Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Goodness-of-Fit Tests: Chi2 test
+  \end{itemize}
+\end{itemize}
+
+\chapter{Generating a random sample（乱数の生成）}\label{generating-a-random-sampleux4e71ux6570ux306eux751fux6210}
+
+\section*{復習}\label{ux5fa9ux7fd2-3}
+\addcontentsline{toc}{section}{復習}
+
+\begin{itemize}
+\tightlist
+\item
+  Law of large numbers (LLN)
+\item
+  Convergence concept:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    in prob. (weak LLN)
+  \item
+    almost surely (strong LLN)
+  \item
+    in distribution (central limit theorem, CLT)
+  \end{itemize}
+\item
+  変数変換
+\end{itemize}
+
+\section{例： Exponential lifetime (pp.245\textasciitilde)}\label{ux4f8b-exponential-lifetime-pp.245}
+
+\section{直接法}\label{ux76f4ux63a5ux6cd5}
+
+\begin{itemize}
+\tightlist
+\item
+  Prob integral transformation
+\item
+  Box-Muller algorithm
+\item
+  Poisson variance
+\end{itemize}
+
+\section{間接法}\label{ux9593ux63a5ux6cd5}
+
+\begin{itemize}
+\tightlist
+\item
+  Beta RV
+\end{itemize}
+
+\section{Accept/Reject Algorithm}\label{acceptreject-algorithm}
+
+\begin{itemize}
+\item
+  Beta RV
+\item
+  Metropolis Algorithm
+\end{itemize}
+
+\section*{応用：ベイズ推測法}\label{ux5fdcux7528ux30d9ux30a4ux30baux63a8ux6e2cux6cd5}
+\addcontentsline{toc}{section}{応用：ベイズ推測法}
+
+\begin{itemize}
+\tightlist
+\item
+  Bayesian Markov chain Monte Carlo method
+\item
+  STAN programming: \url{https://mc-stan.org/docs/reference-manual/mcmc.html}
+\item
+  Using R: \url{https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html}
+\end{itemize}
+
+\chapter{Sufficient Statistics（十分統計量）}\label{sufficient-statisticsux5341ux5206ux7d71ux8a08ux91cf}
+
+\section*{復習}\label{ux5fa9ux7fd2-4}
+\addcontentsline{toc}{section}{復習}
+
+\begin{itemize}
+\tightlist
+\item
+  Exponential family
+\item
+  Statistic
+\item
+  Likelihood
+\end{itemize}
+
+\section*{Principles of data reduction}\label{principles-of-data-reduction}
+\addcontentsline{toc}{section}{Principles of data reduction}
+
+\begin{itemize}
+\tightlist
+\item
+  Sufficiency principle
+\item
+  Likelihood principal
+\item
+  Formal likelihood Principal*
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Formal sufficiency principle
+  \item
+    Conditional principle
+  \item
+    Formal likelihood principal
+  \end{itemize}
+\item
+  Equivariance Principle*
+\end{itemize}
+
+\section{Sufficiency Principle}\label{sufficiency-principle}
+
+\section{Sufficient Statistics}\label{sufficient-statistics}
+
+\section{Ancillary Statistics}\label{ancillary-statistics}
+
+\section{Complete Statistics}\label{complete-statistics}
+
+\section{Basu' Theorem}\label{basu-theorem}
+
+\section{Likelihood Principle}\label{likelihood-principle}
+
+\section*{応用：ベイズ推測法}\label{ux5fdcux7528ux30d9ux30a4ux30baux63a8ux6e2cux6cd5-1}
+\addcontentsline{toc}{section}{応用：ベイズ推測法}
+
+\begin{itemize}
+\tightlist
+\item
+  Bayesian Markov chain Monte Carlo method
+\item
+  STAN programming: \url{https://mc-stan.org/docs/reference-manual/mcmc.html}
+\item
+  Using R: \url{https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html}
+\end{itemize}
+
+\end{document}
