@@ -20,7 +20,7 @@ site: bookdown::bookdown_site
 
 [Click here to download XLSX](Schedule2026.xlsx) 
 
-## 本ゼミの資料{-}
+## ゼミの資料（毎週更新）{-}
 
   - PDF [Click here to open folder](pdf/.)
   - Notes [Click here to open folder](notes/.)
