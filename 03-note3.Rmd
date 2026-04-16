@@ -21,7 +21,7 @@
 
 - 例： Uniform distribution
 
-## 定理3：順序統計量のJoint CDF, PDF（Exercise 5.27, 5.28）
+## 定理3：順序統計量のJoint CDF, PDF*
 
 - 例： Midrange, range
 

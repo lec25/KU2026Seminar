@@ -31,6 +31,7 @@ site: bookdown::bookdown_site
     - 現代数理統計学 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000105174;jsessionid=77611339D268556CDFB560D03E30F354?0)
     - 現代数理統計学の基礎 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000050917?2)
     - 一般化線形モデル [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031957?19)
+    - 欠測データの統計解析 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18)
     - ベイズ計算統計学 [Link to Kobe Univ. Lib](https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027079?21)
 
   - Fundamentals of Biostatistics [Click here to open PDF](Textbook/Fundamentals of Biostatistics (8th Edition).pdf)
