@@ -29,3 +29,4 @@ ancillary-statistics
 complete-statistics
 basu-theorem
 likelihood-principle
+定理3順序統計量のjoint-cdf-pdf

@@ -24,6 +24,8 @@
 
   - 分布と期待値
 
+- 例： Poisson-Gamma distribution (課題-> 4.32)
+
 - 例： Noncentral $\chi^2$ distribution
 
 - 例： Beta-binomial Hierarchy
@@ -38,6 +40,7 @@
 - 定理*
 - EM vs MLE*
 - Missing data issue*
+- Kullback–Leibler (KL) divergence: $KL(Q||P)$ - a measure of how much an approximating probability distribution $Q$ is different from a true probability distribution $P$
 
 ## コメント{-}
 
@@ -53,7 +56,7 @@
   - Gibbs sampling
 
 - GLMM: generalized linear mixed effects model（一般化線形混合モデル）
-  - その特例： ANOVA
+  - その特例： GLM
   - その一般化： Bayesian hierarchical model、階層ベイズ
 
 - Meta-analysis　データの統合
