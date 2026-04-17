@@ -23,7 +23,8 @@ site: bookdown::bookdown_site
 ## ゼミの資料（毎週更新）{-}
 
   - PDF [Click here to open folder](pdf/.)
-  - Notes [Click here to open folder](notes/.)
+  - Notes [Click here to open PDF](notes/Wed-seminar.pdf)
+  
 
 ## 参考資料{-}
 
