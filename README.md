@@ -1,3 +1,3 @@
-### Source codes and documents store here
+### Source codes and documents
 
 https://lec25.github.io/KU2026Seminar/
