@@ -7,7 +7,7 @@
 - 条件付き確率（密度）関数、周辺確率（密度）関数
 - Bayesian Rule, Bayes estimators
 
-## 階層モデル（pp.163~）
+## 階層モデル（pp.163~、現代数理統計の基礎 pp.65）
 
 
 - 例： Binomial-Poisson Hierarchy
@@ -24,7 +24,7 @@
 
   - 分布と期待値
 
-- 例： Poisson-Gamma distribution (課題-> 4.32)
+- 例： Poisson-Gamma distribution (課題 $\rightarrow$ 4.32)
 
 - 例： Noncentral $\chi^2$ distribution
 
@@ -34,13 +34,18 @@
 
 - 例： Beta-binomial Hierarchy
 
-### EM algorithm (pp.327)
+### EM algorithm (pp.327、現代数理統計の基礎 pp.263)
 
 - 例： Multiple Poisson rates
 - 定理*
 - EM vs MLE*
 - Missing data issue*
-- Kullback–Leibler (KL) divergence: $KL(Q||P)$ - a measure of how much an approximating probability distribution $Q$ is different from a true probability distribution $P$
+
+  - 混合分布の推定　(現代数理統計の基礎 pp.264 例11.4)
+  
+- Kullback–Leibler (KL) divergence: $KL(Q||P)$ - a measure of how much an approximating probability distribution $Q$ is different from a true probability distribution $P$ (現代数理統計の基礎 pp.195)
+
+- Newton-Raphson method (現代数理統計の基礎 pp.262)
 
 ## コメント{-}
 
@@ -56,7 +61,10 @@
   - Gibbs sampling
 
 - GLMM: generalized linear mixed effects model（一般化線形混合モデル）
+
   - その特例： GLM
   - その一般化： Bayesian hierarchical model、階層ベイズ
 
 - Meta-analysis　データの統合
+
+-
