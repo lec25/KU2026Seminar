@@ -8,7 +8,7 @@
   - Sign test/Wilcoxon Signed-rank test
   - Wilcoxon rank-sum test/U test
 
-## 順序統計量（pp.226~；現 pp.101）
+## 順序統計量（pp.226~；現代数理統計の基礎 pp.101）
 
 - 定義、表記
 
@@ -27,8 +27,9 @@
 
 ## 応用{-}
 
-- Kolmogorov–Smirnov 検定 for Goodness of Fit（適合度・あてはまりの良さ)
+- Kolmogorov–Smirnov 検定 
 
+  - 2つの標本についてそれぞれの母集団の確率分布が一致しているかどうか
   - Goodness-of-Fit Tests: Chi2 test
 
 

@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Seminar Notes 2026</a></li>
+        <li><a href="https://github.com/lec25/KU2026Seminar">Seminar Notes 2026</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    # edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+    # edit: https://github.com/lec25/KU2026Seminar%s
     # download: ["pdf", "epub"]
 # bookdown::pdf_book:
 #   includes:
