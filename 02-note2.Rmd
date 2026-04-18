@@ -40,8 +40,6 @@
 - 定理*
 - EM vs MLE*
 - Missing data issue*
-
-  - 混合分布の推定　(現代数理統計の基礎 pp.264 例11.4)
   
 - Kullback–Leibler (KL) divergence: $KL(Q||P)$ - a measure of how much an approximating probability distribution $Q$ is different from a true probability distribution $P$ (現代数理統計の基礎 pp.195)
 
@@ -54,17 +52,19 @@
 
 ## 応用{-}
 
+- GLMM: generalized linear mixed effects model（一般化線形混合モデル）
+
+  - その特例： GLM
+  - その一般化： Bayesian hierarchical model、階層ベイズ
+  - Meta-analysis　データの統合
+  
 - Bayes analysis (pp.371)
 
   - Empirical Bayes analysis
   - Hierarchical Bayes analysis 
   - Gibbs sampling
 
-- GLMM: generalized linear mixed effects model（一般化線形混合モデル）
-
-  - その特例： GLM
-  - その一般化： Bayesian hierarchical model、階層ベイズ
-
-- Meta-analysis　データの統合
-
--
+- EM 
+  
+  - 混合分布の推定　(現代数理統計の基礎 pp.264 例11.4)
+  - 分類モデル
