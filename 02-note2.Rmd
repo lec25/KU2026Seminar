@@ -73,7 +73,7 @@
 
 Suppose $X\sim N(\mu, 1)$, where $\mu$ is unknown.
 
-Observable data is $\{0,2,*\}$
+Observable data are $\{0,2,*\}$
 
 We can use the following EM algorithm to find $\hat\mu$
 
