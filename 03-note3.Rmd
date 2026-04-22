@@ -1,10 +1,13 @@
 # Order Statistics（順序統計量）
 
+2026-5-8
+
 ## 復習{-}
 
 - 統計量
+- 中央値、分位数
 - Rank
-- Nonparametric test (based on rank)
+- Nonparametric 検定 (based on rank)
   - Sign test/Wilcoxon Signed-rank test
   - Wilcoxon rank-sum test/U test
 
@@ -15,11 +18,12 @@
   - Sample range, sample median
   - lower/upper quartile, interquartile range
   
-## 定理1：順序統計量の確率（導出）
+## 定理1：順序統計量のPMF（導出）
 
 ## 定理2：順序統計量のCDF, PDF（導出）
 
 - 例： Uniform distribution
+- 最小統計量、最大統計量のPDF（現代数理統計の基礎 pp.104）*
 
 ## 定理3：順序統計量のJoint CDF, PDF*
 
@@ -31,5 +35,3 @@
 
   - 2つの標本についてそれぞれの母集団の確率分布が一致しているかどうか
   - Goodness-of-Fit Tests: Chi2 test
-
-

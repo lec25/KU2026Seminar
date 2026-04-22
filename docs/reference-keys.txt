@@ -14,7 +14,7 @@ mixture-distributionの定義
 em-algorithm-pp.327現代数理統計の基礎-pp.263
 order-statistics順序統計量
 順序統計量pp.226現代数理統計の基礎-pp.101
-定理1順序統計量の確率導出
+定理1順序統計量のpmf導出
 定理2順序統計量のcdf-pdf導出
 定理3順序統計量のjoint-cdf-pdf
 generating-a-random-sample乱数の生成
@@ -29,3 +29,4 @@ ancillary-statistics
 complete-statistics
 basu-theorem
 likelihood-principle
+r-experiment

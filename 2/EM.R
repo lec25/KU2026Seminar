@@ -16,7 +16,7 @@ tol <- 1e-6
 diff <- Inf
 while (diff > tol) {
   
-  EMll = function(mu2) integrate(
+  EMl = function(mu2) integrate(
     {function(x) (dnorm(0, mu2, 1, log = TRUE)+
       dnorm(2, mu2, 1, log = TRUE)+
       dnorm(x, mu2, 1, log = TRUE)) *
@@ -49,14 +49,14 @@ ll <- function(par){
   -sum(log((1 - pi)*f1 + pi*f2))
 }
 
-optim(c(0.5,0.1,0.1,0.1,0.1),ll,method="L-BFGS-B",
+optim(c(0.5, 0.5, 1, 0.5, 1),ll,method="L-BFGS-B",
       lower = c(1e-4, -Inf, -Inf, 1e-4, 1e-4),
       upper = c(1 - 1e-4, Inf, Inf, Inf, Inf))
   
 
 
-
-par <- c(0.5, 0, 1, 1, 1)  # (pi, mu1, mu2, sigma1, sigma2)
+## EM
+par <- c(0.5, 0.5, 1, 0.5, 1)  # (pi, mu1, mu2, sigma1, sigma2)
 tol <- 1e-6
 diff <- Inf
 
@@ -91,38 +91,4 @@ while (diff > tol) {
   print(par)
 }
 
-
-par <- c(0.5,0.1,0.1,0.1,0.1)
-tol <- 1e-6
-diff <- Inf
-
-while (diff > tol) {
-  
-  EMll = function(par_new){
-    
-    pi <- par_new[1]
-    mu1 <- par_new[2]
-    mu2 <- par_new[3]
-    sigma1 <- par_new[4]
-    sigma2 <- par_new[5]
-    
-    ll <- function(x) {
-      
-      sum((1 - x)*dnorm(y, mu1, sigma1, log = TRUE)+ (1-x)*log(1 - pi)+
-            x*dnorm(y, mu2, sigma2, log = TRUE) + x*log(pi))* dbinom(x,1,par[1])
-    }
-    
-    -integrate(ll, -Inf, Inf)$value
-    
-  }
-  
-  par_new <- optim(par, EMll, method="L-BFGS-B",
-                   lower = c(0,-Inf, -Inf, 0, 0),
-                   upper = c(1, Inf, Inf, Inf, Inf))$par
-  
-  diff <- max(abs(par_new - par))
-  par <- par_new
-  pp <- par_new[1]
-  print(par)
-  
-}
+## EM --> incomplete data MLE

@@ -23,7 +23,7 @@
 <meta name="author" content="Yi Zhou" />
 
 
-<meta name="date" content="2026-04-18" />
+<meta name="date" content="2026-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,7 +122,7 @@
 <ul>
 <li class="chapter" data-level="" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%BE%A9%E7%BF%92-2"><i class="fa fa-check"></i>復習</a></li>
 <li class="chapter" data-level="3.1" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8Fpp.226%E7%8F%BE%E4%BB%A3%E6%95%B0%E7%90%86%E7%B5%B1%E8%A8%88%E3%81%AE%E5%9F%BA%E7%A4%8E-pp.101"><i class="fa fa-check"></i><b>3.1</b> 順序統計量（pp.226~；現代数理統計の基礎 pp.101）</a></li>
-<li class="chapter" data-level="3.2" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AE%E7%A2%BA%E7%8E%87%E5%B0%8E%E5%87%BA"><i class="fa fa-check"></i><b>3.2</b> 定理1：順序統計量の確率（導出）</a></li>
+<li class="chapter" data-level="3.2" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEpmf%E5%B0%8E%E5%87%BA"><i class="fa fa-check"></i><b>3.2</b> 定理1：順序統計量のPMF（導出）</a></li>
 <li class="chapter" data-level="3.3" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%862%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEcdf-pdf%E5%B0%8E%E5%87%BA"><i class="fa fa-check"></i><b>3.3</b> 定理2：順序統計量のCDF, PDF（導出）</a></li>
 <li class="chapter" data-level="3.4" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%863%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEjoint-cdf-pdf"><i class="fa fa-check"></i><b>3.4</b> 定理3：順序統計量のJoint CDF, PDF*</a></li>
 <li class="chapter" data-level="" data-path="order-statistics順序統計量.html"><a href="order-statistics順序統計量.html#%E5%BF%9C%E7%94%A8-2"><i class="fa fa-check"></i>応用</a></li>
@@ -170,12 +170,14 @@
             <section class="normal" id="section-">
 <div id="order-statistics順序統計量" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Note 3</span> Order Statistics（順序統計量）<a href="order-statistics順序統計量.html#order-statistics%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>2026-5-8</p>
 <div id="復習-2" class="section level2 unnumbered hasAnchor">
 <h2>復習<a href="order-statistics順序統計量.html#%E5%BE%A9%E7%BF%92-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>統計量</li>
+<li>中央値、分位数</li>
 <li>Rank</li>
-<li>Nonparametric test (based on rank)
+<li>Nonparametric 検定 (based on rank)
 <ul>
 <li>Sign test/Wilcoxon Signed-rank test</li>
 <li>Wilcoxon rank-sum test/U test</li>
@@ -192,13 +194,14 @@
 </ul></li>
 </ul>
 </div>
-<div id="定理1順序統計量の確率導出" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> 定理1：順序統計量の確率（導出）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AE%E7%A2%BA%E7%8E%87%E5%B0%8E%E5%87%BA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="定理1順序統計量のpmf導出" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> 定理1：順序統計量のPMF（導出）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%861%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEpmf%E5%B0%8E%E5%87%BA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
 <div id="定理2順序統計量のcdf-pdf導出" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> 定理2：順序統計量のCDF, PDF（導出）<a href="order-statistics順序統計量.html#%E5%AE%9A%E7%90%862%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F%E3%81%AEcdf-pdf%E5%B0%8E%E5%87%BA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>例： Uniform distribution</li>
+<li>最小統計量、最大統計量のPDF（現代数理統計の基礎 pp.104）*</li>
 </ul>
 </div>
 <div id="定理3順序統計量のjoint-cdf-pdf" class="section level2 hasAnchor" number="3.4">
