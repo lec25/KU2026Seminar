@@ -20,10 +20,10 @@ site: bookdown::bookdown_site
 
 [Click here to download XLSX](Schedule2026.xlsx) 
 
-## ゼミの資料（毎週更新）{-}
+<!-- ## ゼミの資料（毎週更新）{-} -->
 
-  - PDF [Click here to open folder](pdf/.)
-  - Notes [Click here to open PDF](notes/Wed-seminar.pdf)
+<!--   - PDF [Click here to open folder](pdf/.) -->
+<!--   - Notes [Click here to open PDF](notes/Wed-seminar.pdf) -->
   
 
 ## 参考資料{-}
@@ -59,7 +59,7 @@ site: bookdown::bookdown_site
 ## R{-}
 
   - R and RStudio installation: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
-  - 授業の資料：[https://lec25.github.io/2026-1H609/](https://lec25.github.io/2026-1H609/)
+  - 授業の資料：[https://lec25.github.io/2026-1H609/](https://lec25.github.io/KU2026-1H609/)
   - etc.
 
 ## Python{-}

@@ -12,6 +12,7 @@ hierarchical-model-mixture-distribution階層モデル混合分布
 mixture-distributionの定義
 定理２conditional-variance-identity証明
 em-algorithm-pp.327現代数理統計の基礎-pp.263
+r-experiment
 order-statistics順序統計量
 順序統計量pp.226現代数理統計の基礎-pp.101
 定理1順序統計量のpmf導出
@@ -29,4 +30,3 @@ ancillary-statistics
 complete-statistics
 basu-theorem
 likelihood-principle
-r-experiment
