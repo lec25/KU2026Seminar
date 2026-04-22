@@ -128,7 +128,7 @@ hist(y)
 
 Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=1-\pi$. 
 
-$Y_i|Z_i=0\sim(\mu_1, \sigma_1^2); Y_i|Z_i=1\sim(\mu_2, \sigma_2^2)$
+$Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)$
 
 Then the marginal pdf of $Y$: $f_Y(y)=(1-\pi)\phi(y| \mu_1,\sigma_1)+\pi\phi(y| \mu_2,\sigma_2)$
 

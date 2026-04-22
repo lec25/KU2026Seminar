@@ -383,7 +383,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb5-4" tabindex="-1"></a><span class="fu">hist</span>(y)</span></code></pre></div>
 <p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" alt="" width="672" /></p>
 <p>Suppose <span class="math inline">\(Z_i\)</span> is the latent group variable (unobservable), where <span class="math inline">\(P(Z_i=0)=1-\pi, P(Z_1=1)=1-\pi\)</span>.</p>
-<p><span class="math inline">\(Y_i|Z_i=0\sim(\mu_1, \sigma_1^2); Y_i|Z_i=1\sim(\mu_2, \sigma_2^2)\)</span></p>
+<p><span class="math inline">\(Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)\)</span></p>
 <p>Then the marginal pdf of <span class="math inline">\(Y\)</span>: <span class="math inline">\(f_Y(y)=(1-\pi)\phi(y| \mu_1,\sigma_1)+\pi\phi(y| \mu_2,\sigma_2)\)</span></p>
 <p>Likelihood function is</p>
 <p><span class="math inline">\(L(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2) = \prod_{i=1}^N (1-\pi)\phi(\mu_1,\sigma_1|y_i)+\pi\phi(\mu_2,\sigma_2|y_i)\)</span></p>
