@@ -7,9 +7,9 @@
 - 統計量
 - 中央値、分位数
 - Rank
-- Nonparametric 検定 (based on rank)
-  - Sign test/Wilcoxon Signed-rank test
-  - Wilcoxon rank-sum test/U test
+  - Nonparametric 検定 (based on rank)
+    - Sign test/Wilcoxon Signed-rank test
+    - Wilcoxon rank-sum test/U test
 
 ## 順序統計量（pp.226~；現代数理統計の基礎 pp.101）
 
@@ -17,6 +17,7 @@
 
   - Sample range, sample median
   - lower/upper quartile, interquartile range
+  - Quantile function  分位関数*
   
 ## 定理1：順序統計量のPMF（導出）
 
@@ -31,7 +32,8 @@
 
 ## 応用{-}
 
+- Sign test
 - Kolmogorov–Smirnov 検定 
 
   - 2つの標本についてそれぞれの母集団の確率分布が一致しているかどうか
-  - Goodness-of-Fit Tests: Chi2 test
+    - Goodness-of-Fit Tests: $\chi^2$ test

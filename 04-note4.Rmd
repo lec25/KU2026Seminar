@@ -2,20 +2,28 @@
 
 ## 復習{-}
 
+
+- 変数変換  
+  - 確率積分変換Probability Integral Transform 
+  
+- 順序統計量
+  - 分位関数
+
 - Law of large numbers (LLN)
 - Convergence concept: 
   - in prob. (weak LLN)
   - almost surely (strong LLN)
   - in distribution (central limit theorem, CLT)
-- 変数変換  
+
 
 ## 例： Exponential lifetime (pp.245~)
 
 ## 直接法
 
-- Prob integral transformation
-- Box-Muller algorithm
-- Poisson variance
+- 例：確率積分変換（Probability Integral Transform）の例
+- 例：Box-Muller algorithm
+- 例：Binomial 確率変数（Random variable, RV）
+- 例：Poisson 分散の分布
 
 ## 間接法
 
@@ -30,5 +38,5 @@
 ## 応用：ベイズ推測法{-}
 
 - Bayesian Markov chain Monte Carlo method
-- STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
-- Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html
+  - STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
+  - Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html

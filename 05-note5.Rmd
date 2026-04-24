@@ -2,34 +2,103 @@
 
 ## 復習{-}
 
+- 統計量
 - Exponential family
-- Statistic
 - Likelihood
 
 
-## Principles of data reduction{-}
+## Three Principles of data reduction{-}
 - Sufficiency principle
 - Likelihood principal
-- Formal likelihood Principal* 
+- Equivariance principle
   - Formal sufficiency principle
   - Conditional principle
   - Formal likelihood principal
-- Equivariance Principle*
+    - Formal likelihood principal corollary
 
-## Sufficiency Principle
+## Sufficiency Principle (pp.272~)
 
-## Sufficient Statistics
+- Principle
 
-## Ancillary Statistics
+### Sufficient statistics 十分統計量
+- 定義
 
-## Complete Statistics
+#### Sufficient Statisticsに関する定理
+  - 例：Binomial, Normal, Order statistics   
+  
+#### Factorization Theorem 分解定理
+  - 例：Normal, Uniform, Normal considering 2 parameters
 
-## Basu' Theorem
+#### Exponential family に関する定理
+  
+### Minimal sufficient statistics 最小十分統計量
+
+- 定義
+- 例：Normal
+
+#### Minimal Sufficient Statisticsに関する定理
+  - 例：Normal, Uniform
+  
+
+### Ancillary Statistics 補助統計量
+- 定義
+- 例：Uniform, Location family, Scale family
+
+### Complete Statistics 完全統計量
+
+- Sufficient, Ancillary, Complete の定義
+- Complete Statistics定義
+- 例：Binomial, Uniform
+
+#### Basu's Theorem (Ancillary Statistics $\bot$ Complete and minimal sufficient Statistics)
+
+#### 定理（Exponential family）
+  - 例：$E(g(\bf X))$, $\bar X\bot S^2$
+
+#### 定理（Complete Statistics $\rightarrow$ Minimal sufficient statistics）
 
 ## Likelihood Principle
 
-## 応用：ベイズ推測法{-}
+### Likelihood function
 
-- Bayesian Markov chain Monte Carlo method
-- STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
-- Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html
+- 定義
+- 例：Negative Binomial
+
+#### Likelihood Principle 尤度原理
+- 例：Normal fiducial dist.
+
+#### Evidence function*
+
+- Formal sufficiency principle
+- Conditional principle
+  - Binomial, negative binomial
+  
+- Formal likelihood principle
+- Likleihood principle corollary
+- Birnbaum' theorem
+  - 例
+  
+## Equivariance Principle 同変原則*
+
+- Equivarianceの定義
+  - Measurement equivariance 測定同変性, formal invariance 形式的不変性
+
+- Equivariance Principle
+  - Binomial
+  
+### A group of transformation*
+- 例
+
+### Invariant under the group*
+
+- Normal location invariant
+
+
+
+## 応用
+
+- MLE, Bayesian Inference
+- Constructing Unbiased Estimators
+  - Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)
+- Likelihood ratio test
+- Location-Scale family
