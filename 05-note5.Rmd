@@ -5,6 +5,7 @@
 - 統計量
 - Exponential family
 - Likelihood
+- Estimator
 
 
 ## Three Principles of data reduction{-}
@@ -92,13 +93,14 @@
 ### Invariant under the group*
 
 - Normal location invariant
-
+- 例：binomial Bayes estimator(pp.332)
 
 
 ## 応用
 
-- MLE, Bayesian Inference
-- Constructing Unbiased Estimators
+- MLE, Bayesian Inference: remove  as much data as possible from the likelihood
+- Find UMVUE (uniformly minimum variance unbiased estimator)
   - Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)
+  - Lehmann-Scheffé theorem
 - Likelihood ratio test
 - Location-Scale family

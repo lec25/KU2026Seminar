@@ -23,7 +23,7 @@
 <meta name="author" content="Yi Zhou" />
 
 
-<meta name="date" content="2026-04-24" />
+<meta name="date" content="2026-04-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="generating-a-random-sample乱数の生成.html"/>
-
+<link rel="next" href="loss-function-optimality.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -54,6 +54,71 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -132,8 +197,10 @@
 <li class="chapter" data-level="" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E5%BE%A9%E7%BF%92-3"><i class="fa fa-check"></i>復習</a></li>
 <li class="chapter" data-level="4.1" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E4%BE%8B-exponential-lifetime-pp.245"><i class="fa fa-check"></i><b>4.1</b> 例： Exponential lifetime (pp.245~)</a></li>
 <li class="chapter" data-level="4.2" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E7%9B%B4%E6%8E%A5%E6%B3%95"><i class="fa fa-check"></i><b>4.2</b> 直接法</a></li>
-<li class="chapter" data-level="4.3" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E9%96%93%E6%8E%A5%E6%B3%95"><i class="fa fa-check"></i><b>4.3</b> 間接法</a></li>
-<li class="chapter" data-level="4.4" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#acceptreject-algorithm"><i class="fa fa-check"></i><b>4.4</b> Accept/Reject Algorithm</a></li>
+<li class="chapter" data-level="4.3" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E9%96%93%E6%8E%A5%E6%B3%95"><i class="fa fa-check"></i><b>4.3</b> 間接法</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#acceptreject-algorithm"><i class="fa fa-check"></i><b>4.3.1</b> Accept/Reject Algorithm</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="generating-a-random-sample乱数の生成.html"><a href="generating-a-random-sample乱数の生成.html#%E5%BF%9C%E7%94%A8%E3%83%99%E3%82%A4%E3%82%BA%E6%8E%A8%E6%B8%AC%E6%B3%95"><i class="fa fa-check"></i>応用：ベイズ推測法</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html"><i class="fa fa-check"></i><b>5</b> Sufficient Statistics（十分統計量）</a>
@@ -157,6 +224,11 @@
 <li class="chapter" data-level="5.3.2" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#invariant-under-the-group"><i class="fa fa-check"></i><b>5.3.2</b> Invariant under the group*</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#%E5%BF%9C%E7%94%A8-3"><i class="fa fa-check"></i><b>5.4</b> 応用</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html"><i class="fa fa-check"></i><b>6</b> Loss function optimality</a>
+<ul>
+<li class="chapter" data-level="" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html#%E5%BE%A9%E7%BF%92-5"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="6.1" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html#%E5%BF%9C%E7%94%A8-4"><i class="fa fa-check"></i><b>6.1</b> 応用</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -186,6 +258,7 @@
 <li>統計量</li>
 <li>Exponential family</li>
 <li>Likelihood</li>
+<li>Estimator</li>
 </ul>
 </div>
 <div id="three-principles-of-data-reduction" class="section level2 unnumbered hasAnchor">
@@ -325,16 +398,18 @@
 <h3><span class="header-section-number">5.3.2</span> Invariant under the group*<a href="sufficient-statistics十分統計量.html#invariant-under-the-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Normal location invariant</li>
+<li>例：binomial Bayes estimator(pp.332)</li>
 </ul>
 </div>
 </div>
 <div id="応用-3" class="section level2 hasAnchor" number="5.4">
 <h2><span class="header-section-number">5.4</span> 応用<a href="sufficient-statistics十分統計量.html#%E5%BF%9C%E7%94%A8-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>MLE, Bayesian Inference</li>
-<li>Constructing Unbiased Estimators
+<li>MLE, Bayesian Inference: remove as much data as possible from the likelihood</li>
+<li>Find UMVUE (uniformly minimum variance unbiased estimator)
 <ul>
 <li>Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)</li>
+<li>Lehmann-Scheffé theorem</li>
 </ul></li>
 <li>Likelihood ratio test</li>
 <li>Location-Scale family</li>
@@ -347,8 +422,8 @@
           </div>
         </div>
       </div>
-<a href="generating-a-random-sample乱数の生成.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="generating-a-random-sample乱数の生成.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="loss-function-optimality.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -27,11 +27,11 @@
 
 ## 間接法
 
-- Beta RV
+- 例：Beta RV
   
-## Accept/Reject Algorithm
+### Accept/Reject Algorithm
 
-- Beta RV
+- 例：Beta RV
 
 - Metropolis Algorithm
 

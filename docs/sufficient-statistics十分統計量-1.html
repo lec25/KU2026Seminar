@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Seminar Notes 2026</title>
-  <meta name="description" content="Seminar Notes 2026" />
+  <title>Note 6 Sufficient Statistics（十分統計量） | Seminar Notes 2026</title>
+  <meta name="description" content="Note 6 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Seminar Notes 2026" />
+  <meta property="og:title" content="Note 6 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Seminar Notes 2026" />
+  <meta name="twitter:title" content="Note 6 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="sufficient-statistics十分統計量.html"/>
 
-<link rel="next" href="exponential-family指数型分布族.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -54,71 +54,6 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
-<style type="text/css">
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
   
@@ -225,10 +160,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="sufficient-statistics十分統計量.html"><a href="sufficient-statistics十分統計量.html#%E5%BF%9C%E7%94%A8-3"><i class="fa fa-check"></i><b>5.4</b> 応用</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html"><i class="fa fa-check"></i><b>6</b> Loss function optimality</a>
+<li class="chapter" data-level="6" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html"><i class="fa fa-check"></i><b>6</b> Sufficient Statistics（十分統計量）</a>
 <ul>
-<li class="chapter" data-level="" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html#%E5%BE%A9%E7%BF%92-5"><i class="fa fa-check"></i>復習</a></li>
-<li class="chapter" data-level="6.1" data-path="loss-function-optimality.html"><a href="loss-function-optimality.html#%E5%BF%9C%E7%94%A8-4"><i class="fa fa-check"></i><b>6.1</b> 応用</a></li>
+<li class="chapter" data-level="" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#%E5%BE%A9%E7%BF%92-5"><i class="fa fa-check"></i>復習</a></li>
+<li class="chapter" data-level="" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#three-principles-of-data-reduction-1"><i class="fa fa-check"></i>Three Principles of data reduction</a></li>
+<li class="chapter" data-level="6.1" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#sufficiency-principle-pp.272-1"><i class="fa fa-check"></i><b>6.1</b> Sufficiency Principle (pp.272~)</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#sufficient-statistics-%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F-1"><i class="fa fa-check"></i><b>6.1.1</b> Sufficient statistics 十分統計量</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#minimal-sufficient-statistics-%E6%9C%80%E5%B0%8F%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F-1"><i class="fa fa-check"></i><b>6.1.2</b> Minimal sufficient statistics 最小十分統計量</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#ancillary-statistics-%E8%A3%9C%E5%8A%A9%E7%B5%B1%E8%A8%88%E9%87%8F-1"><i class="fa fa-check"></i><b>6.1.3</b> Ancillary Statistics 補助統計量</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#complete-statistics-%E5%AE%8C%E5%85%A8%E7%B5%B1%E8%A8%88%E9%87%8F-1"><i class="fa fa-check"></i><b>6.1.4</b> Complete Statistics 完全統計量</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#likelihood-principle-1"><i class="fa fa-check"></i><b>6.2</b> Likelihood Principle</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#likelihood-function-1"><i class="fa fa-check"></i><b>6.2.1</b> Likelihood function</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#equivariance-principle-%E5%90%8C%E5%A4%89%E5%8E%9F%E5%89%87-1"><i class="fa fa-check"></i><b>6.3</b> Equivariance Principle 同変原則*</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#a-group-of-transformation-1"><i class="fa fa-check"></i><b>6.3.1</b> A group of transformation*</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#invariant-under-the-group-1"><i class="fa fa-check"></i><b>6.3.2</b> Invariant under the group*</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="sufficient-statistics十分統計量-1.html"><a href="sufficient-statistics十分統計量-1.html#%E5%BF%9C%E7%94%A8-4"><i class="fa fa-check"></i><b>6.4</b> 応用</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -250,96 +202,168 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Seminar Notes 2026</h1>
-<p class="author"><em>Yi Zhou</em></p>
-<p class="date"><em>2026-04-25</em></p>
-</div>
-<div id="資料" class="section level1 unnumbered hasAnchor">
-<h1>資料<a href="index.html#%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="スケジュール" class="section level2 unnumbered hasAnchor">
-<h2>スケジュール<a href="index.html#%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="Schedule2026.xlsx">Click here to download XLSX</a></p>
-<!-- ## ゼミの資料（毎週更新）{-} -->
-<!--   - PDF [Click here to open folder](pdf/.) -->
-<!--   - Notes [Click here to open PDF](notes/Wed-seminar.pdf) -->
-</div>
-<div id="参考資料" class="section level2 unnumbered hasAnchor">
-<h2>参考資料<a href="index.html#%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sufficient-statistics十分統計量-1" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Note 6</span> Sufficient Statistics（十分統計量）<a href="sufficient-statistics十分統計量-1.html#sufficient-statistics%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="復習-5" class="section level2 unnumbered hasAnchor">
+<h2>復習<a href="sufficient-statistics十分統計量-1.html#%E5%BE%A9%E7%BF%92-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Statistical Inference <a href="Textbook/Casella_Berger_Statistical_Inference.pdf">Click here to open PDF</a>
-<ul>
-<li>現代数理統計学 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000105174;jsessionid=77611339D268556CDFB560D03E30F354?0">Link to Kobe Univ. Lib</a></li>
-<li>現代数理統計学の基礎 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000050917?2">Link to Kobe Univ. Lib</a></li>
-<li>一般化線形モデル <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031957?19">Link to Kobe Univ. Lib</a></li>
-<li>欠測データの統計解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18">Link to Kobe Univ. Lib</a></li>
-<li>ベイズ計算統計学 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027079?21">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>Fundamentals of Biostatistics <a href="Textbook/Fundamentals%20of%20Biostatistics%20(8th%20Edition).pdf">Click here to open PDF</a>
-<ul>
-<li>医学統計学ハンドブック <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000068387?3">Link to Kobe Univ. Lib</a></li>
-<li>生存時間解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000117213?16">Link to Kobe Univ. Lib</a></li>
-<li>実験計画法と分散分析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027080?23">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>An introduction to statistical learning
-<ul>
-<li>with application in Python <a href="Textbook/ISLP_pyhton.pdf">Click here to open PDF</a></li>
-<li>with application in R <a href="Textbook/ISLR_R.pdf">Click here to open PDF</a></li>
-</ul></li>
-<li>統計的因果推論 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000034381?17">Link to Kobe Univ. Lib</a>
-<ul>
-<li>欠測データの統計解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>Others <a href="Textbook/.">Click here to open folder</a></li>
+<li>統計量</li>
+<li>Exponential family</li>
+<li>Likelihood</li>
+<li>Estimator</li>
 </ul>
 </div>
-<div id="数理科学入門統計学の資料" class="section level2 unnumbered hasAnchor">
-<h2>数理科学入門（統計学）の資料<a href="index.html#%E6%95%B0%E7%90%86%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80%E7%B5%B1%E8%A8%88%E5%AD%A6%E3%81%AE%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="three-principles-of-data-reduction-1" class="section level2 unnumbered hasAnchor">
+<h2>Three Principles of data reduction<a href="sufficient-statistics十分統計量-1.html#three-principles-of-data-reduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Slides <a href="Stats-slides/allslides.pdf">Click here to open PDF</a></li>
-<li>Notes <a href="Stats-slides/allnotes.pdf">Click here to open PDF</a></li>
-<li>毎回の資料 <a href="Stats-slides/slides-split/.">Click here to open folder</a></li>
+<li>Sufficiency principle</li>
+<li>Likelihood principal</li>
+<li>Equivariance principle
+<ul>
+<li>Formal sufficiency principle</li>
+<li>Conditional principle</li>
+<li>Formal likelihood principal
+<ul>
+<li>Formal likelihood principal corollary</li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
-<div id="r" class="section level2 unnumbered hasAnchor">
-<h2>R<a href="index.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sufficiency-principle-pp.272-1" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Sufficiency Principle (pp.272~)<a href="sufficient-statistics十分統計量-1.html#sufficiency-principle-pp.272-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>R and RStudio installation: <a href="https://posit.co/download/rstudio-desktop/">https://posit.co/download/rstudio-desktop/</a></li>
-<li>授業の資料：<a href="https://lec25.github.io/KU2026-1H609/">https://lec25.github.io/2026-1H609/</a></li>
-<li>etc.</li>
+<li>Principle</li>
+</ul>
+<div id="sufficient-statistics-十分統計量-1" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Sufficient statistics 十分統計量<a href="sufficient-statistics十分統計量-1.html#sufficient-statistics-%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>定義</li>
+</ul>
+<div id="sufficient-statisticsに関する定理-1" class="section level4 hasAnchor" number="6.1.1.1">
+<h4><span class="header-section-number">6.1.1.1</span> Sufficient Statisticsに関する定理<a href="sufficient-statistics十分統計量-1.html#sufficient-statistics%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>例：Binomial, Normal, Order statistics</li>
 </ul>
 </div>
-<div id="python" class="section level2 unnumbered hasAnchor">
-<h2>Python<a href="index.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="factorization-theorem-分解定理-1" class="section level4 hasAnchor" number="6.1.1.2">
+<h4><span class="header-section-number">6.1.1.2</span> Factorization Theorem 分解定理<a href="sufficient-statistics十分統計量-1.html#factorization-theorem-%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li><a href="https://yongks.github.io/python_bookdown/">https://yongks.github.io/python_bookdown/</a></li>
-<li>etc.</li>
+<li>例：Normal, Uniform, Normal considering 2 parameters</li>
 </ul>
 </div>
-<div id="journals" class="section level2 unnumbered hasAnchor">
-<h2>Journals<a href="index.html#journals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exponential-family-に関する定理-1" class="section level4 hasAnchor" number="6.1.1.3">
+<h4><span class="header-section-number">6.1.1.3</span> Exponential family に関する定理<a href="sufficient-statistics十分統計量-1.html#exponential-family-%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+<div id="minimal-sufficient-statistics-最小十分統計量-1" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Minimal sufficient statistics 最小十分統計量<a href="sufficient-statistics十分統計量-1.html#minimal-sufficient-statistics-%E6%9C%80%E5%B0%8F%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>Biostatistics</p>
+<li>定義</li>
+<li>例：Normal</li>
+<li>Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)</li>
+</ul>
+<div id="minimal-sufficient-statisticsに関する定理-1" class="section level4 hasAnchor" number="6.1.2.1">
+<h4><span class="header-section-number">6.1.2.1</span> Minimal Sufficient Statisticsに関する定理<a href="sufficient-statistics十分統計量-1.html#minimal-sufficient-statistics%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li><a href="https://academic.oup.com/biometrics">Biometrics</a></li>
-<li><a href="https://onlinelibrary.wiley.com/journal/10970258">Statistics in Medicine</a></li>
-<li><a href="https://academic.oup.com/biostatistics">Biostatistics</a></li>
-<li><a href="https://journals.sagepub.com/home/SMM">Statistical Methods in Medical Research (SMMR)</a></li>
-<li><a href="https://www.tandfonline.com/journals/uasa20">Journal of the American Statistical Association (JASA)</a></li>
-<li><a href="https://academic.oup.com/biomet">Biometrika</a></li>
-<li><a href="https://academic.oup.com/jrsssb?login=true">Journal of the Royal Statistical Society, Series B (Statistical Methodology) (JRSS B)</a></li>
-<li><a href="https://www.jstage.jst.go.jp/browse/jjb/-char/ja">計量生物学</a></li>
-<li><a href="https://www.ism.ac.jp/editsec/toukei/index.html">統計数理</a></li>
+<li>例：Normal, Uniform</li>
+</ul>
+</div>
+</div>
+<div id="ancillary-statistics-補助統計量-1" class="section level3 hasAnchor" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Ancillary Statistics 補助統計量<a href="sufficient-statistics十分統計量-1.html#ancillary-statistics-%E8%A3%9C%E5%8A%A9%E7%B5%B1%E8%A8%88%E9%87%8F-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>定義</li>
+<li>例：Uniform, Location family, Scale family</li>
+</ul>
+</div>
+<div id="complete-statistics-完全統計量-1" class="section level3 hasAnchor" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Complete Statistics 完全統計量<a href="sufficient-statistics十分統計量-1.html#complete-statistics-%E5%AE%8C%E5%85%A8%E7%B5%B1%E8%A8%88%E9%87%8F-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Sufficient, Ancillary, Complete の定義</li>
+<li>Complete Statistics定義</li>
+<li>例：Binomial, Uniform</li>
+</ul>
+<div id="basus-theorem-ancillary-statistics-bot-complete-and-minimal-sufficient-statistics-1" class="section level4 hasAnchor" number="6.1.4.1">
+<h4><span class="header-section-number">6.1.4.1</span> Basu’s Theorem (Ancillary Statistics <span class="math inline">\(\bot\)</span> Complete and minimal sufficient Statistics)<a href="sufficient-statistics十分統計量-1.html#basus-theorem-ancillary-statistics-bot-complete-and-minimal-sufficient-statistics-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="定理exponential-family-1" class="section level4 hasAnchor" number="6.1.4.2">
+<h4><span class="header-section-number">6.1.4.2</span> 定理（Exponential family）<a href="sufficient-statistics十分統計量-1.html#%E5%AE%9A%E7%90%86exponential-family-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>例：<span class="math inline">\(E(g(\bf X))\)</span>, <span class="math inline">\(\bar X\bot S^2\)</span></li>
+</ul>
+</div>
+<div id="定理complete-statistics-rightarrow-minimal-sufficient-statistics-1" class="section level4 hasAnchor" number="6.1.4.3">
+<h4><span class="header-section-number">6.1.4.3</span> 定理（Complete Statistics <span class="math inline">\(\rightarrow\)</span> Minimal sufficient statistics）<a href="sufficient-statistics十分統計量-1.html#%E5%AE%9A%E7%90%86complete-statistics-rightarrow-minimal-sufficient-statistics-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+</div>
+<div id="likelihood-principle-1" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Likelihood Principle<a href="sufficient-statistics十分統計量-1.html#likelihood-principle-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="likelihood-function-1" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Likelihood function<a href="sufficient-statistics十分統計量-1.html#likelihood-function-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>定義</li>
+<li>例：Negative Binomial</li>
+</ul>
+<div id="likelihood-principle-尤度原理-1" class="section level4 hasAnchor" number="6.2.1.1">
+<h4><span class="header-section-number">6.2.1.1</span> Likelihood Principle 尤度原理<a href="sufficient-statistics十分統計量-1.html#likelihood-principle-%E5%B0%A4%E5%BA%A6%E5%8E%9F%E7%90%86-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>例：Normal fiducial dist.</li>
+</ul>
+</div>
+<div id="evidence-function-1" class="section level4 hasAnchor" number="6.2.1.2">
+<h4><span class="header-section-number">6.2.1.2</span> Evidence function*<a href="sufficient-statistics十分統計量-1.html#evidence-function-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Formal sufficiency principle</li>
+<li>Conditional principle
+<ul>
+<li>Binomial, negative binomial</li>
 </ul></li>
-<li><p>Epidemiology</p>
+<li>Formal likelihood principle</li>
+<li>Likleihood principle corollary</li>
+<li>Birnbaum’ theorem
 <ul>
-<li><a href="https://academic.oup.com/aje">American Journal of Epidemiology</a></li>
+<li>例</li>
 </ul></li>
-<li><p>Bioinformatics</p>
+</ul>
+</div>
+</div>
+</div>
+<div id="equivariance-principle-同変原則-1" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Equivariance Principle 同変原則*<a href="sufficient-statistics十分統計量-1.html#equivariance-principle-%E5%90%8C%E5%A4%89%E5%8E%9F%E5%89%87-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><a href="https://academic.oup.com/bib">Briefings in Bioinformatics</a></li>
-<li><a href="https://academic.oup.com/bioinformatics">Bioinformatics</a></li>
+<li>Equivarianceの定義
+<ul>
+<li>Measurement equivariance 測定同変性, formal invariance 形式的不変性</li>
 </ul></li>
+<li>Equivariance Principle
+<ul>
+<li>Binomial</li>
+</ul></li>
+</ul>
+<div id="a-group-of-transformation-1" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> A group of transformation*<a href="sufficient-statistics十分統計量-1.html#a-group-of-transformation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>例</li>
+</ul>
+</div>
+<div id="invariant-under-the-group-1" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Invariant under the group*<a href="sufficient-statistics十分統計量-1.html#invariant-under-the-group-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Normal location invariant</li>
+</ul>
+</div>
+</div>
+<div id="応用-4" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> 応用<a href="sufficient-statistics十分統計量-1.html#%E5%BF%9C%E7%94%A8-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>MLE, Bayesian Inference: remove as much data as possible from the likelihood</li>
+<li>Constructing Unbiased Estimators
+<ul>
+<li>Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)</li>
+</ul></li>
+<li>Likelihood ratio test</li>
+<li>Location-Scale family</li>
 </ul>
 
 </div>
@@ -349,8 +373,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="sufficient-statistics十分統計量.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="exponential-family指数型分布族.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

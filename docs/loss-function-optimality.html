@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Seminar Notes 2026</title>
-  <meta name="description" content="Seminar Notes 2026" />
+  <title>Note 6 Loss function optimality | Seminar Notes 2026</title>
+  <meta name="description" content="Note 6 Loss function optimality | Seminar Notes 2026" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Seminar Notes 2026" />
+  <meta property="og:title" content="Note 6 Loss function optimality | Seminar Notes 2026" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Seminar Notes 2026" />
+  <meta name="twitter:title" content="Note 6 Loss function optimality | Seminar Notes 2026" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="sufficient-statistics十分統計量.html"/>
 
-<link rel="next" href="exponential-family指数型分布族.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -250,97 +250,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Seminar Notes 2026</h1>
-<p class="author"><em>Yi Zhou</em></p>
-<p class="date"><em>2026-04-25</em></p>
+<div id="loss-function-optimality" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Note 6</span> Loss function optimality<a href="loss-function-optimality.html#loss-function-optimality" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="復習-5" class="section level2 unnumbered hasAnchor">
+<h2>復習<a href="loss-function-optimality.html#%E5%BE%A9%E7%BF%92-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="資料" class="section level1 unnumbered hasAnchor">
-<h1>資料<a href="index.html#%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="スケジュール" class="section level2 unnumbered hasAnchor">
-<h2>スケジュール<a href="index.html#%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="Schedule2026.xlsx">Click here to download XLSX</a></p>
-<!-- ## ゼミの資料（毎週更新）{-} -->
-<!--   - PDF [Click here to open folder](pdf/.) -->
-<!--   - Notes [Click here to open PDF](notes/Wed-seminar.pdf) -->
-</div>
-<div id="参考資料" class="section level2 unnumbered hasAnchor">
-<h2>参考資料<a href="index.html#%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Statistical Inference <a href="Textbook/Casella_Berger_Statistical_Inference.pdf">Click here to open PDF</a>
-<ul>
-<li>現代数理統計学 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000105174;jsessionid=77611339D268556CDFB560D03E30F354?0">Link to Kobe Univ. Lib</a></li>
-<li>現代数理統計学の基礎 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000050917?2">Link to Kobe Univ. Lib</a></li>
-<li>一般化線形モデル <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031957?19">Link to Kobe Univ. Lib</a></li>
-<li>欠測データの統計解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18">Link to Kobe Univ. Lib</a></li>
-<li>ベイズ計算統計学 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027079?21">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>Fundamentals of Biostatistics <a href="Textbook/Fundamentals%20of%20Biostatistics%20(8th%20Edition).pdf">Click here to open PDF</a>
-<ul>
-<li>医学統計学ハンドブック <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000068387?3">Link to Kobe Univ. Lib</a></li>
-<li>生存時間解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000117213?16">Link to Kobe Univ. Lib</a></li>
-<li>実験計画法と分散分析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000027080?23">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>An introduction to statistical learning
-<ul>
-<li>with application in Python <a href="Textbook/ISLP_pyhton.pdf">Click here to open PDF</a></li>
-<li>with application in R <a href="Textbook/ISLR_R.pdf">Click here to open PDF</a></li>
-</ul></li>
-<li>統計的因果推論 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000034381?17">Link to Kobe Univ. Lib</a>
-<ul>
-<li>欠測データの統計解析 <a href="https://elib.maruzen.co.jp/elib/html/BookDetail/Id/3000031956?18">Link to Kobe Univ. Lib</a></li>
-</ul></li>
-<li>Others <a href="Textbook/.">Click here to open folder</a></li>
-</ul>
-</div>
-<div id="数理科学入門統計学の資料" class="section level2 unnumbered hasAnchor">
-<h2>数理科学入門（統計学）の資料<a href="index.html#%E6%95%B0%E7%90%86%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80%E7%B5%B1%E8%A8%88%E5%AD%A6%E3%81%AE%E8%B3%87%E6%96%99" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Slides <a href="Stats-slides/allslides.pdf">Click here to open PDF</a></li>
-<li>Notes <a href="Stats-slides/allnotes.pdf">Click here to open PDF</a></li>
-<li>毎回の資料 <a href="Stats-slides/slides-split/.">Click here to open folder</a></li>
-</ul>
-</div>
-<div id="r" class="section level2 unnumbered hasAnchor">
-<h2>R<a href="index.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>R and RStudio installation: <a href="https://posit.co/download/rstudio-desktop/">https://posit.co/download/rstudio-desktop/</a></li>
-<li>授業の資料：<a href="https://lec25.github.io/KU2026-1H609/">https://lec25.github.io/2026-1H609/</a></li>
-<li>etc.</li>
-</ul>
-</div>
-<div id="python" class="section level2 unnumbered hasAnchor">
-<h2>Python<a href="index.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://yongks.github.io/python_bookdown/">https://yongks.github.io/python_bookdown/</a></li>
-<li>etc.</li>
-</ul>
-</div>
-<div id="journals" class="section level2 unnumbered hasAnchor">
-<h2>Journals<a href="index.html#journals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><p>Biostatistics</p>
-<ul>
-<li><a href="https://academic.oup.com/biometrics">Biometrics</a></li>
-<li><a href="https://onlinelibrary.wiley.com/journal/10970258">Statistics in Medicine</a></li>
-<li><a href="https://academic.oup.com/biostatistics">Biostatistics</a></li>
-<li><a href="https://journals.sagepub.com/home/SMM">Statistical Methods in Medical Research (SMMR)</a></li>
-<li><a href="https://www.tandfonline.com/journals/uasa20">Journal of the American Statistical Association (JASA)</a></li>
-<li><a href="https://academic.oup.com/biomet">Biometrika</a></li>
-<li><a href="https://academic.oup.com/jrsssb?login=true">Journal of the Royal Statistical Society, Series B (Statistical Methodology) (JRSS B)</a></li>
-<li><a href="https://www.jstage.jst.go.jp/browse/jjb/-char/ja">計量生物学</a></li>
-<li><a href="https://www.ism.ac.jp/editsec/toukei/index.html">統計数理</a></li>
-</ul></li>
-<li><p>Epidemiology</p>
-<ul>
-<li><a href="https://academic.oup.com/aje">American Journal of Epidemiology</a></li>
-</ul></li>
-<li><p>Bioinformatics</p>
-<ul>
-<li><a href="https://academic.oup.com/bib">Briefings in Bioinformatics</a></li>
-<li><a href="https://academic.oup.com/bioinformatics">Bioinformatics</a></li>
-</ul></li>
-</ul>
+<div id="応用-4" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> 応用<a href="loss-function-optimality.html#%E5%BF%9C%E7%94%A8-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>
@@ -349,8 +265,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="sufficient-statistics十分統計量.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="exponential-family指数型分布族.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
