@@ -46,3 +46,4 @@ invariant-under-the-group
 応用-3
 loss-function-optimality
 応用-4
+コメント-2
