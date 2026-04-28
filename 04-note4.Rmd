@@ -1,42 +1,106 @@
-# Generating a random sample（乱数の生成）
+# Sufficient Statistics（十分統計量）
 
 ## 復習{-}
 
+- 統計量
+- Exponential family
+- Likelihood
+- Estimator
 
-- 変数変換  
-  - 確率積分変換Probability Integral Transform 
+
+## Three Principles of data reduction{-}
+- Sufficiency principle
+- Likelihood principal
+- Equivariance principle
+  - Formal sufficiency principle
+  - Conditional principle
+  - Formal likelihood principal
+    - Formal likelihood principal corollary
+
+## Sufficiency Principle (pp.272~)
+
+- Principle
+
+### Sufficient statistics 十分統計量
+- 定義
+
+#### Sufficient Statisticsに関する定理
+- 例：Binomial, Normal, Order statistics   
   
-- 順序統計量
-  - 分位関数
+#### Factorization Theorem 分解定理
+- 例：Normal, Uniform, Normal considering 2 parameters
 
-- Law of large numbers (LLN)
-- Convergence concept: 
-  - in prob. (weak LLN)
-  - almost surely (strong LLN)
-  - in distribution (central limit theorem, CLT)
-
-
-## 例： Exponential lifetime (pp.245~)
-
-## 直接法
-
-- 例：確率積分変換（Probability Integral Transform）の例
-- 例：Box-Muller algorithm
-- 例：Binomial 確率変数（Random variable, RV）
-- 例：Poisson 分散の分布
-
-## 間接法
-
-- 例：Beta RV
+#### Exponential family に関する定理
   
-### Accept/Reject Algorithm
+### Minimal sufficient statistics 最小十分統計量
 
-- 例：Beta RV
+- 定義
+- 例：Normal
 
-- Metropolis Algorithm
+#### Minimal Sufficient Statisticsに関する定理
+  - 例：Normal, Uniform
+  
 
-## 応用：ベイズ推測法{-}
+### Ancillary Statistics 補助統計量
+- 定義
+- 例：Uniform, Location family, Scale family
 
-- Bayesian Markov chain Monte Carlo method
-  - STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
-  - Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html
+### Complete Statistics 完全統計量
+
+- Sufficient, Ancillary, Complete の定義
+- Complete Statistics定義
+- 例：Binomial, Uniform
+
+#### Basu's Theorem (Ancillary Statistics $\bot$ Complete and minimal sufficient Statistics)
+
+#### 定理（Exponential family）
+  - 例：$E(g(\bf X))$, $\bar X\bot S^2$
+
+#### 定理（Complete Statistics $\rightarrow$ Minimal sufficient statistics）
+
+## Likelihood Principle
+
+### Likelihood function
+
+- 定義
+- 例：Negative Binomial
+
+#### Likelihood Principle 尤度原理
+- 例：Normal fiducial dist.
+
+#### Evidence function*
+
+- Formal sufficiency principle
+- Conditional principle
+  - Binomial, negative binomial
+  
+- Formal likelihood principle
+- Likleihood principle corollary
+- Birnbaum' theorem
+  - 例
+  
+## Equivariance Principle 同変原則*
+
+- Equivarianceの定義
+  - Measurement equivariance 測定同変性, formal invariance 形式的不変性
+
+- Equivariance Principle
+  - Binomial
+  
+### A group of transformation*
+- 例
+
+### Invariant under the group*
+
+- Normal location invariant
+- 例：binomial Bayes estimator(pp.332)
+
+
+## 応用
+
+- MLE, Bayesian Inference: remove  as much data as possible from the likelihood
+- Find UMVUE (uniformly minimum variance unbiased estimator)
+  - Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)
+  - Lehmann-Scheffé theorem
+- Likelihood ratio test
+- Location-Scale family

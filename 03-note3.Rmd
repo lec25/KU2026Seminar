@@ -36,7 +36,7 @@
   - $F_n(t)=\dfrac{1}{n}\sum_{i=1}^nI\{X_i\le t\} \xrightarrow{AS} F(t), \quad \forall t$
   - $\sqrt{n}(F_n(t)-F(t)) \xrightarrow{D} N(0, F(t)(1-F(t)))$
     - $P(\{X_i\le t\})=F(t)$
-  - Empirical process, semiparametric inference (https://people.eecs.berkeley.edu/~jordan/sail/readings/kosorok.pdf)
+  - [Empirical process, semiparametric inference](https://people.eecs.berkeley.edu/~jordan/sail/readings/kosorok.pdf)
 
 ## 応用{-}
 

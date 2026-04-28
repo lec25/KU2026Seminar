@@ -1,0 +1,110 @@
+---
+title: "Two examples about EM algorithm"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## R Experiment 
+
+(I like to use R; Python can be used in the same way.)
+
+Suppose $X\sim N(\mu, 1)$, where $\mu$ is unknown.
+
+The observable data are $\{0,2,x\}$, where $x$ indicates the missing value. 
+
+We can use the following EM algorithm to find $\hat\mu$
+
+```{r}
+mu <- 2   ## Initial value
+tol <- 1e-6  ## Difference between mu_new and mu
+diff <- Inf  ## set some very large value as initial difference
+
+while (diff > tol) { ## If difference is greater than some very small value, then stop
+  mu_new <- (0 + 2 + mu) / 3
+  diff <- abs(mu_new - mu)
+  mu <- mu_new
+  print(mu)
+}
+
+```
+
+Because:
+
+1. Loglikelihood of $\{0,2,x\}$: $log L(\mu|x)\propto -\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(x-\mu)^2\}$, where we omit all the constants.
+
+2. $E_{X|\mu'}[log L(\mu|X)]\\\propto E_{X|\mu'}[-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(X-\mu)^2\}]\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[(X-\mu)^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2-2X\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2]-2E_{X|\mu'}[X]\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(1+\mu'^2)-2\mu'\mu+\mu^2]\}$
+
+3. Maximum $E_{X|\mu'}[log L(\mu|X)] \Rightarrow \mu = \dfrac{0+2+\mu'}{3}$ 
+
+4. Set an initial value for $\mu'$ and derive $\mu$ until $\mu=\mu'$
+
+
+## Gaussian Mixture Model
+
+Suppose we observed some scores from 2 groups (e.g. $N(\mu_1, \sigma_1^2), N(\mu_2, \sigma_2^2)$). However we could not observe the group variable.
+
+Data look like this
+
+```{r}
+y <- c(-0.39, 0.12, 0.94, 1.67, 1.76, 2.44, 3.72, 4.28, 4.92, 5.53, 
+       0.06, 0.48, 1.01, 1.68, 1.80, 3.25, 4.12, 4.60, 5.28, 6.22)
+
+hist(y) ## this is the histogram (empirical distribution) of data
+```
+
+Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=1-\pi$. 
+
+$Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2)=\phi(\mu_1,\sigma_1|y_i); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)=\phi(\mu_2,\sigma_2|y_i)$
+
+Then the marginal pdf of $Y$: $f_Y(y)=(1-\pi)\phi(y| \mu_1,\sigma_1)+\pi\phi(y| \mu_2,\sigma_2)$
+
+Likelihood function is 
+
+$L(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2) = \prod_{i=1}^N (1-\pi)\phi(\mu_1,\sigma_1|y_i)+\pi\phi(\mu_2,\sigma_2|y_i)$
+
+We could use MLE to estimate the parameters $(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2)$ but the derivation is complicated. 
+
+
+Consider the EM algorithm.
+
+```{r}
+## EM
+par <- c(0.5, 0.5, 1, 0.5, 1)  # Initial values of (pi, mu1, mu2, sigma1, sigma2)
+tol <- 1e-6 
+diff <- Inf  ## set some very large value as initial difference
+
+while (diff > tol) { ## If difference is greater than some very small value, then stop
+  
+  pi <- par[1]
+  mu1 <- par[2]
+  mu2 <- par[3]
+  sigma1 <- par[4]
+  sigma2 <- par[5]
+  
+  ## ---- E-step ----
+  f1 <- dnorm(y, mu1, sigma1)
+  f2 <- dnorm(y, mu2, sigma2)
+  
+  gamma <- pi * f2 / ((1 - pi) * f1 + pi * f2)
+  
+  ## ---- M-step ----
+  pi_new <- mean(gamma)
+  
+  mu1_new <- sum((1 - gamma) * y) / sum(1 - gamma)
+  mu2_new <- sum(gamma * y) / sum(gamma)
+  
+  sigma1_new <- sqrt(sum((1 - gamma) * (y - mu1_new)^2) / sum(1 - gamma))
+  sigma2_new <- sqrt(sum(gamma * (y - mu2_new)^2) / sum(gamma))
+  
+  par_new <- c(pi_new, mu1_new, mu2_new, sigma1_new, sigma2_new)
+  
+  diff <- max(abs(par_new - par))
+  par <- par_new
+
+  print(par)
+}
+```
+
+The detailed derivations of the parameters can be found online.
