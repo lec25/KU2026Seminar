@@ -23,7 +23,7 @@
 <meta name="author" content="Yi Zhou" />
 
 
-<meta name="date" content="2026-04-28" />
+<meta name="date" content="2026-04-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -340,7 +340,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-2" tabindex="-1"></a>tol <span class="ot">&lt;-</span> <span class="fl">1e-6</span>  <span class="do">## Difference between mu_new and mu</span></span>
 <span id="cb1-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-3" tabindex="-1"></a>diff <span class="ot">&lt;-</span> <span class="cn">Inf</span>  <span class="do">## set some very large value as initial difference</span></span>
 <span id="cb1-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-4" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-5" tabindex="-1"></a><span class="cf">while</span> (diff <span class="sc">&gt;</span> tol) { <span class="do">## If difference is greater than some very small value, then stop</span></span>
+<span id="cb1-5"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-5" tabindex="-1"></a><span class="cf">while</span> (diff <span class="sc">&gt;</span> tol) { <span class="do">## If difference is SMALLER than some very small value, then stop</span></span>
 <span id="cb1-6"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-6" tabindex="-1"></a>  mu_new <span class="ot">&lt;-</span> (<span class="dv">0</span> <span class="sc">+</span> <span class="dv">2</span> <span class="sc">+</span> mu) <span class="sc">/</span> <span class="dv">3</span></span>
 <span id="cb1-7"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-7" tabindex="-1"></a>  diff <span class="ot">&lt;-</span> <span class="fu">abs</span>(mu_new <span class="sc">-</span> mu)</span>
 <span id="cb1-8"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb1-8" tabindex="-1"></a>  mu <span class="ot">&lt;-</span> mu_new</span>
@@ -376,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb3-3" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb3-4" tabindex="-1"></a><span class="fu">hist</span>(y) <span class="do">## this is the histogram (empirical distribution) of data</span></span></code></pre></div>
 <p><img src="_main_files/figure-html/unnamed-chunk-2-1.png" alt="" width="672" /></p>
-<p>Suppose <span class="math inline">\(Z_i\)</span> is the latent group variable (unobservable), where <span class="math inline">\(P(Z_i=0)=1-\pi, P(Z_1=1)=1-\pi\)</span>.</p>
+<p>Suppose <span class="math inline">\(Z_i\)</span> is the latent group variable (unobservable), where <span class="math inline">\(P(Z_i=0)=1-\pi, P(Z_1=1)=\pi\)</span>.</p>
 <p><span class="math inline">\(Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2)=\phi(\mu_1,\sigma_1|y_i); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)=\phi(\mu_2,\sigma_2|y_i)\)</span></p>
 <p>Then the marginal pdf of <span class="math inline">\(Y\)</span>: <span class="math inline">\(f_Y(y)=(1-\pi)\phi(y| \mu_1,\sigma_1)+\pi\phi(y| \mu_2,\sigma_2)\)</span></p>
 <p>Likelihood function is</p>
@@ -388,7 +388,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-3" tabindex="-1"></a>tol <span class="ot">&lt;-</span> <span class="fl">1e-6</span> </span>
 <span id="cb4-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-4" tabindex="-1"></a>diff <span class="ot">&lt;-</span> <span class="cn">Inf</span>  <span class="do">## set some very large value as initial difference</span></span>
 <span id="cb4-5"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-5" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-6" tabindex="-1"></a><span class="cf">while</span> (diff <span class="sc">&gt;</span> tol) { <span class="do">## If difference is greater than some very small value, then stop</span></span>
+<span id="cb4-6"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-6" tabindex="-1"></a><span class="cf">while</span> (diff <span class="sc">&gt;</span> tol) { <span class="do">## If difference is SMALLER than some very small value, then stop</span></span>
 <span id="cb4-7"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-7" tabindex="-1"></a>  </span>
 <span id="cb4-8"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-8" tabindex="-1"></a>  pi <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
 <span id="cb4-9"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-9" tabindex="-1"></a>  mu1 <span class="ot">&lt;-</span> par[<span class="dv">2</span>]</span>

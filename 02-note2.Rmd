@@ -85,7 +85,7 @@ mu <- 2   ## Initial value
 tol <- 1e-6  ## Difference between mu_new and mu
 diff <- Inf  ## set some very large value as initial difference
 
-while (diff > tol) { ## If difference is greater than some very small value, then stop
+while (diff > tol) { ## If difference is SMALLER than some very small value, then stop
   mu_new <- (0 + 2 + mu) / 3
   diff <- abs(mu_new - mu)
   mu <- mu_new
@@ -118,7 +118,7 @@ y <- c(-0.39, 0.12, 0.94, 1.67, 1.76, 2.44, 3.72, 4.28, 4.92, 5.53,
 hist(y) ## this is the histogram (empirical distribution) of data
 ```
 
-Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=1-\pi$. 
+Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=\pi$. 
 
 $Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2)=\phi(\mu_1,\sigma_1|y_i); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)=\phi(\mu_2,\sigma_2|y_i)$
 
@@ -139,7 +139,7 @@ par <- c(0.5, 0.5, 1, 0.5, 1)  # Initial values of (pi, mu1, mu2, sigma1, sigma2
 tol <- 1e-6 
 diff <- Inf  ## set some very large value as initial difference
 
-while (diff > tol) { ## If difference is greater than some very small value, then stop
+while (diff > tol) { ## If difference is SMALLER than some very small value, then stop
   
   pi <- par[1]
   mu1 <- par[2]
