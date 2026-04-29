@@ -466,8 +466,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [1] 0.4454102 1.0831604 4.6559112 0.9007599 0.9048734</code></pre>
 <p>The detailed derivations of the parameters can be found online.</p>
 <p>Continue with the model.</p>
-<p>With the estimates, we have the marginal pdf of <span class="math inline">\(Y\)</span>: <span class="math inline">\(f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)\)</span></p>
-<p>Suppose a new point is observed <span class="math inline">\(y_{new}=3\)</span>, we can derive <span class="math inline">\(f_Y(y_{new})\)</span></p>
+<p>With the estimates, we have the marginal pdf of <span class="math inline">\(Y\)</span>: <span class="math inline">\(f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)\)</span>. (Attention: this is just the density, not the probability)</p>
+<p>What we can do next is to predict the probabilities of a new point falling into each group.</p>
+<p>Suppose a new point is observed as <span class="math inline">\(y_{new}=3\)</span>, we can derive <span class="math inline">\(f_Y(y_{new})\)</span></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb6-1" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">3</span></span>
 <span id="cb6-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb6-2" tabindex="-1"></a>par <span class="do">## the estimates</span></span></code></pre></div>
 <pre><code>## [1] 0.4454102 1.0831604 4.6559112 0.9007599 0.9048734</code></pre>
@@ -494,7 +495,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb10-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-2" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-3" tabindex="-1"></a>pz0 <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">-</span>pi) <span class="sc">*</span> f1<span class="sc">/</span>fy</span>
 <span id="cb10-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-4" tabindex="-1"></a>pz1 <span class="ot">&lt;-</span> pi <span class="sc">*</span> f2<span class="sc">/</span>fy</span></code></pre></div>
-<p>The probability of being classified into groups are shown as</p>
+<p>The probabilities of being classified into groups are shown as</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb11-1" tabindex="-1"></a>pz0</span></code></pre></div>
 <pre><code>## [1] 0.409503</code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb13-1" tabindex="-1"></a>pz1</span></code></pre></div>

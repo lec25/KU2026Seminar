@@ -175,9 +175,11 @@ The detailed derivations of the parameters can be found online.
 
 Continue with the model.
 
-With the estimates, we have the marginal pdf of $Y$: $f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)$
+With the estimates, we have the marginal pdf of $Y$: $f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)$. (Attention: this is just the density, not the probability)
 
-Suppose a new point is observed $y_{new}=3$, we can derive $f_Y(y_{new})$
+What we can do next is to predict the probabilities of a new point falling into each group.
+
+Suppose a new point is observed as $y_{new}=3$, we can derive $f_Y(y_{new})$
 
 ```{r}
 y <- 3
@@ -214,7 +216,7 @@ pz0 <- (1-pi) * f1/fy
 pz1 <- pi * f2/fy
 ```
 
-The probability of being classified into groups are shown as
+The probabilities of being classified into groups are shown as
 
 ```{r}
 pz0

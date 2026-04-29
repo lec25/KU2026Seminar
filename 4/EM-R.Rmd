@@ -6,13 +6,13 @@ output:
   html_document: default
 ---
 
-## R Experiment 
+## R Experiment
 
 (I like to use R; Python can be used in the same way.)
 
 Suppose $X\sim N(\mu, 1)$, where $\mu$ is unknown.
 
-The observable data are $\{0,2,x\}$, where $x$ indicates the missing value. 
+The observable data are $\{0,2,x\}$, where $x$ indicates the missing value.
 
 We can use the following EM algorithm to find $\hat\mu$
 
@@ -32,14 +32,13 @@ while (diff > tol) { ## If difference is SMALLER than some very small value, the
 
 Because:
 
-1. Loglikelihood of $\{0,2,x\}$: $log L(\mu|x)\propto -\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(x-\mu)^2\}$, where we omit all the constants.
+1.  Loglikelihood of $\{0,2,x\}$: $log L(\mu|x)\propto -\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(x-\mu)^2\}$, where we omit all the constants.
 
-2. $E_{X|\mu'}[log L(\mu|X)]\\\propto E_{X|\mu'}[-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(X-\mu)^2\}]\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[(X-\mu)^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2-2X\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2]-2E_{X|\mu'}[X]\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(1+\mu'^2)-2\mu'\mu+\mu^2]\}$
+2.  $E_{X|\mu'}[log L(\mu|X)]\\\propto E_{X|\mu'}[-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(X-\mu)^2\}]\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[(X-\mu)^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2-2X\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+E_{X|\mu'}[X^2]-2E_{X|\mu'}[X]\mu+\mu^2]\}\\=-\dfrac{1}{2}\{(0-\mu)^2+(2-\mu)^2+(1+\mu'^2)-2\mu'\mu+\mu^2]\}$
 
-3. Maximum $E_{X|\mu'}[log L(\mu|X)] \Rightarrow \mu = \dfrac{0+2+\mu'}{3}$ 
+3.  Maximum $E_{X|\mu'}[log L(\mu|X)] \Rightarrow \mu = \dfrac{0+2+\mu'}{3}$
 
-4. Set an initial value for $\mu'$ and derive $\mu$ until $\mu=\mu'$
-
+4.  Set an initial value for $\mu'$ and derive $\mu$ until $\mu=\mu'$
 
 ### Gaussian Mixture Model
 
@@ -54,18 +53,17 @@ y <- c(-0.39, 0.12, 0.94, 1.67, 1.76, 2.44, 3.72, 4.28, 4.92, 5.53,
 hist(y) ## this is the histogram (empirical distribution) of data
 ```
 
-Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=\pi$. 
+Suppose $Z_i$ is the latent group variable (unobservable), where $P(Z_i=0)=1-\pi, P(Z_1=1)=\pi$.
 
 $Y_i|Z_i=0\sim N(\mu_1, \sigma_1^2)=\phi(\mu_1,\sigma_1|y_i); Y_i|Z_i=1\sim N(\mu_2, \sigma_2^2)=\phi(\mu_2,\sigma_2|y_i)$
 
 Then the marginal pdf of $Y$: $f_Y(y)=(1-\pi)\phi(y| \mu_1,\sigma_1)+\pi\phi(y| \mu_2,\sigma_2)$
 
-Likelihood function is 
+Likelihood function is
 
 $L(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2) = \prod_{i=1}^N (1-\pi)\phi(\mu_1,\sigma_1|y_i)+\pi\phi(\mu_2,\sigma_2|y_i)$
 
-We could use MLE to estimate the parameters $(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2)$ but the derivation is complicated. 
-
+We could use MLE to estimate the parameters $(\pi,\mu_1,\sigma_1,\mu_2,\sigma_2)$ but the derivation is complicated.
 
 Consider the EM algorithm.
 
@@ -130,18 +128,16 @@ f2 <- dnorm(y, mu2, sigma2)
 fy <- (1-pi) * f1 + pi * f2
 fy ## but this is not interesting
 ```
+
 The results we care about is the classification
 
-$P(Z=0 \mid y_{\text{new}}) 
+$P(Z=0 \mid y_{\text{new}})
 = \dfrac{(1-\hat{\pi})\,\phi(y_{\text{new}} \mid \hat{\mu}_1,\hat{\sigma}_1)}
 {f_Y(y_{\text{new}})}$
 
-$P(Z=1 \mid y_{\text{new}}) 
+$P(Z=1 \mid y_{\text{new}})
 = \dfrac{\hat{\pi}\,\phi(y_{\text{new}} \mid \hat{\mu}_2,\hat{\sigma}_2)}
-{f_Y(y_{\text{new}})}
-$
-
-
+{f_Y(y_{\text{new}})}$
 
 ```{r}
 ## Predict the classification results
@@ -156,4 +152,3 @@ The probability of being classified into groups are shown as
 pz0
 pz1
 ```
-
