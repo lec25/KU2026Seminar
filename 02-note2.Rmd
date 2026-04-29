@@ -74,6 +74,8 @@ output:
   - 混合分布の推定　(現代数理統計の基礎 pp.264 例11.4)
   - 分類モデル
 
+## R experiment
+
 Suppose $X\sim N(\mu, 1)$, where $\mu$ is unknown.
 
 The observable data are $\{0,2,x\}$, where $x$ indicates the missing value. 
