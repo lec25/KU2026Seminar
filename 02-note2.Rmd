@@ -148,7 +148,7 @@ while (diff > tol) { ## If difference is SMALLER than some very small value, the
   sigma2 <- par[5]
   
   ## ---- E-step ----
-  f1 <- dnorm(y, mu1, sigma1)
+  f1 <- dnorm(y, mu1, sigma1) ## density of normal distribution
   f2 <- dnorm(y, mu2, sigma2)
   
   gamma <- pi * f2 / ((1 - pi) * f1 + pi * f2)
@@ -172,3 +172,52 @@ while (diff > tol) { ## If difference is SMALLER than some very small value, the
 ```
 
 The detailed derivations of the parameters can be found online.
+
+Continue with the model.
+
+With the estimates, we have the marginal pdf of $Y$: $f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)$
+
+Suppose a new point is observed $y_{new}=3$, we can derive $f_Y(y_{new})$
+
+```{r}
+y <- 3
+par ## the estimates
+pi <- par[1]
+mu1 <- par[2]
+mu2 <- par[3]
+sigma1 <- par[4]
+sigma2 <- par[5]
+
+f1 <- dnorm(y, mu1, sigma1)
+f2 <- dnorm(y, mu2, sigma2)
+  
+fy <- (1-pi) * f1 + pi * f2
+fy ## but this is not interesting
+```
+The results we care about is the classification
+
+$P(Z=0 \mid y_{\text{new}}) 
+= \dfrac{(1-\hat{\pi})\,\phi(y_{\text{new}} \mid \hat{\mu}_1,\hat{\sigma}_1)}
+{f_Y(y_{\text{new}})}$
+
+$P(Z=1 \mid y_{\text{new}}) 
+= \dfrac{\hat{\pi}\,\phi(y_{\text{new}} \mid \hat{\mu}_2,\hat{\sigma}_2)}
+{f_Y(y_{\text{new}})}
+$
+
+
+
+```{r}
+## Predict the classification results
+
+pz0 <- (1-pi) * f1/fy
+pz1 <- pi * f2/fy
+```
+
+The probability of being classified into groups are shown as
+
+```{r}
+pz0
+pz1
+```
+

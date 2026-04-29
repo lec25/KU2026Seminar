@@ -397,7 +397,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-12"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-12" tabindex="-1"></a>  sigma2 <span class="ot">&lt;-</span> par[<span class="dv">5</span>]</span>
 <span id="cb4-13"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-13" tabindex="-1"></a>  </span>
 <span id="cb4-14"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-14" tabindex="-1"></a>  <span class="do">## ---- E-step ----</span></span>
-<span id="cb4-15"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-15" tabindex="-1"></a>  f1 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(y, mu1, sigma1)</span>
+<span id="cb4-15"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-15" tabindex="-1"></a>  f1 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(y, mu1, sigma1) <span class="do">## density of normal distribution</span></span>
 <span id="cb4-16"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-16" tabindex="-1"></a>  f2 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(y, mu2, sigma2)</span>
 <span id="cb4-17"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-17" tabindex="-1"></a>  </span>
 <span id="cb4-18"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb4-18" tabindex="-1"></a>  gamma <span class="ot">&lt;-</span> pi <span class="sc">*</span> f2 <span class="sc">/</span> ((<span class="dv">1</span> <span class="sc">-</span> pi) <span class="sc">*</span> f1 <span class="sc">+</span> pi <span class="sc">*</span> f2)</span>
@@ -465,6 +465,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [1] 0.4454104 1.0831597 4.6559104 0.9007592 0.9048741
 ## [1] 0.4454102 1.0831604 4.6559112 0.9007599 0.9048734</code></pre>
 <p>The detailed derivations of the parameters can be found online.</p>
+<p>Continue with the model.</p>
+<p>With the estimates, we have the marginal pdf of <span class="math inline">\(Y\)</span>: <span class="math inline">\(f_Y(y)=(1-0.4454)\phi(y| 1.0832,0.9008)+\pi\phi(y| 4.6559, 0.9049)\)</span></p>
+<p>Suppose a new point is observed <span class="math inline">\(y_{new}=3\)</span>, we can derive <span class="math inline">\(f_Y(y_{new})\)</span></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb6-1" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb6-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb6-2" tabindex="-1"></a>par <span class="do">## the estimates</span></span></code></pre></div>
+<pre><code>## [1] 0.4454102 1.0831604 4.6559112 0.9007599 0.9048734</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-1" tabindex="-1"></a>pi <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
+<span id="cb8-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-2" tabindex="-1"></a>mu1 <span class="ot">&lt;-</span> par[<span class="dv">2</span>]</span>
+<span id="cb8-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-3" tabindex="-1"></a>mu2 <span class="ot">&lt;-</span> par[<span class="dv">3</span>]</span>
+<span id="cb8-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-4" tabindex="-1"></a>sigma1 <span class="ot">&lt;-</span> par[<span class="dv">4</span>]</span>
+<span id="cb8-5"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-5" tabindex="-1"></a>sigma2 <span class="ot">&lt;-</span> par[<span class="dv">5</span>]</span>
+<span id="cb8-6"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-6" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-7" tabindex="-1"></a>f1 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(y, mu1, sigma1)</span>
+<span id="cb8-8"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-8" tabindex="-1"></a>f2 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(y, mu2, sigma2)</span>
+<span id="cb8-9"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-9" tabindex="-1"></a>  </span>
+<span id="cb8-10"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-10" tabindex="-1"></a>fy <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">-</span>pi) <span class="sc">*</span> f1 <span class="sc">+</span> pi <span class="sc">*</span> f2</span>
+<span id="cb8-11"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb8-11" tabindex="-1"></a>fy <span class="do">## but this is not interesting</span></span></code></pre></div>
+<pre><code>## [1] 0.06232562</code></pre>
+<p>The results we care about is the classification</p>
+<p><span class="math inline">\(P(Z=0 \mid y_{\text{new}})
+= \dfrac{(1-\hat{\pi})\,\phi(y_{\text{new}} \mid \hat{\mu}_1,\hat{\sigma}_1)}
+{f_Y(y_{\text{new}})}\)</span></p>
+<p><span class="math inline">\(P(Z=1 \mid y_{\text{new}})
+= \dfrac{\hat{\pi}\,\phi(y_{\text{new}} \mid \hat{\mu}_2,\hat{\sigma}_2)}
+{f_Y(y_{\text{new}})}\)</span></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-1" tabindex="-1"></a><span class="do">## Predict the classification results</span></span>
+<span id="cb10-2"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-3" tabindex="-1"></a>pz0 <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">-</span>pi) <span class="sc">*</span> f1<span class="sc">/</span>fy</span>
+<span id="cb10-4"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb10-4" tabindex="-1"></a>pz1 <span class="ot">&lt;-</span> pi <span class="sc">*</span> f2<span class="sc">/</span>fy</span></code></pre></div>
+<p>The probability of being classified into groups are shown as</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb11-1" tabindex="-1"></a>pz0</span></code></pre></div>
+<pre><code>## [1] 0.409503</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="hierarchical-model-mixture-distribution階層モデル混合分布.html#cb13-1" tabindex="-1"></a>pz1</span></code></pre></div>
+<pre><code>## [1] 0.590497</code></pre>
 
 </div>
 </div>
