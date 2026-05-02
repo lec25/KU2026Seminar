@@ -100,7 +100,7 @@
 
 - MLE, Bayesian Inference: remove  as much data as possible from the likelihood
 - Find UMVUE (uniformly minimum variance unbiased estimator)
-  - Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)
-  - Lehmann-Scheffé theorem
+  - Unbiased + Sufficient $\Rightarrow$ Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)
+  - Unbiased + Sufficient + Complete $\Rightarrow$ Uniformly best unbiased estimator (Lehmann-Scheffé theorem ,pp.369)
 - Likelihood ratio test
 - Location-Scale family
