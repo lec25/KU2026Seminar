@@ -5,7 +5,10 @@
 - 統計量
 - Exponential family
 - Likelihood
-- Estimator
+- Estimator, point estimaion, unbiasedness
+- Best unbiased estimator (UMVUE, uniform minimum variance unbiased estimator)
+- Cramer-Rao inequality
+
 
 
 ## Three Principles of data reduction{-}
