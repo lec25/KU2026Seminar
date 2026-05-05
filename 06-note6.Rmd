@@ -2,6 +2,7 @@
 
 ## 復習{-}
 
+- Mean square error
 
 
 ## 応用
