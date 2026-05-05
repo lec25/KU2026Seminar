@@ -35,6 +35,8 @@
 
 - Metropolis Algorithm
 
+- See a good reference here: https://rh8liuqy.github.io/Accept_reject.html
+
 ## 応用：ベイズ推測法{-}
 
 - Bayesian Markov chain Monte Carlo method
