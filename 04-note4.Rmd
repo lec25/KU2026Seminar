@@ -5,7 +5,7 @@
 - 統計量
 - Exponential family
 - Likelihood
-- Estimator, point estimaion, unbiasedness
+- Estimator, point estimation, unbiasedness
 - Best unbiased estimator (UMVUE, uniform minimum variance unbiased estimator)
 - Cramer-Rao inequality
 
@@ -13,12 +13,12 @@
 
 ## Three Principles of data reduction{-}
 - Sufficiency principle
-- Likelihood principal
+- Likelihood principle
 - Equivariance principle
   - Formal sufficiency principle
   - Conditional principle
-  - Formal likelihood principal
-    - Formal likelihood principal corollary
+  - Formal likelihood principle
+    - Formal likelihood principle corollary
 
 ## Sufficiency Principle (pp.272~)
 
@@ -78,7 +78,7 @@
   - Binomial, negative binomial
   
 - Formal likelihood principle
-- Likleihood principle corollary
+- Likelihood principle corollary
 - Birnbaum' theorem
   - 例
   

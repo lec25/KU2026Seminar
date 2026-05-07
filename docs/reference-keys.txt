@@ -47,4 +47,8 @@ generating-a-random-sample乱数の生成
 間接法
 acceptreject-algorithm
 loss-function-optimality
+decision-theory-pp.348
+bayes-risk
+loss-function-optimal-in-hypothesis-testing-pp.400402
+loss-function-optimal-in-interval-estimation-pp.449451
 応用-4

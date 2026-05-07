@@ -4,6 +4,34 @@
 
 - Mean square error
 
+## Decision Theory (pp.348~)
+
+- Action space
+- Loss function
+  - 例
+  
+- Risk function
+
+  - 例：Binomial risk functions, Risk normal variance
+  
+## Bayes risk
+
+- Estimator that yields the smallest value of Bayes risk
+- Bayes risk of a decision rule
+- Posterior expected loss
+- 例
+
+## Loss function optimal in hypothesis testing* (pp.400~402)
+
+- 0-1 loss
+- Risk of UMP test
+
+## Loss function optimal in interval estimation* (pp.449~451)
+
 
 ## 応用
 
+- Machine learning: see a review here https://arxiv.org/pdf/2504.04242v1
+
+  - E.g., loss function in linear regression: Residual Sum of Squares (RSS) $\rightarrow$ OLS
+    - Some methods that numerically find the minimum of a loss function: Newton-Raphson, gradient descent, backpropagation
