@@ -52,3 +52,8 @@ bayes-risk
 loss-function-optimal-in-hypothesis-testing-pp.400402
 loss-function-optimal-in-interval-estimation-pp.449451
 応用-4
+bootstrap-robustness-m-estimator
+bootstrap-pp.478
+robustness
+m-estimator
+application

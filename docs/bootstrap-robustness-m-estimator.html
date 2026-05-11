@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Note 4 Sufficient Statistics（十分統計量） | Seminar Notes 2026</title>
-  <meta name="description" content="Note 4 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
+  <title>Note 7 Bootstrap, robustness, M-estimator | Seminar Notes 2026</title>
+  <meta name="description" content="Note 7 Bootstrap, robustness, M-estimator | Seminar Notes 2026" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Note 4 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
+  <meta property="og:title" content="Note 7 Bootstrap, robustness, M-estimator | Seminar Notes 2026" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Note 4 Sufficient Statistics（十分統計量） | Seminar Notes 2026" />
+  <meta name="twitter:title" content="Note 7 Bootstrap, robustness, M-estimator | Seminar Notes 2026" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="order-statistics順序統計量.html"/>
-<link rel="next" href="generating-a-random-sample乱数の生成.html"/>
+<link rel="prev" href="loss-function-optimality.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -268,171 +268,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sufficient-statistics十分統計量" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Note 4</span> Sufficient Statistics（十分統計量）<a href="sufficient-statistics十分統計量.html#sufficient-statistics%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="復習-3" class="section level2 unnumbered hasAnchor">
-<h2>復習<a href="sufficient-statistics十分統計量.html#%E5%BE%A9%E7%BF%92-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="bootstrap-robustness-m-estimator" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Note 7</span> Bootstrap, robustness, M-estimator<a href="bootstrap-robustness-m-estimator.html#bootstrap-robustness-m-estimator" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="review" class="section level2 unnumbered hasAnchor">
+<h2>Review<a href="bootstrap-robustness-m-estimator.html#review" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>統計量</li>
-<li>Exponential family</li>
-<li>Likelihood</li>
-<li>Estimator, point estimation, unbiasedness</li>
-<li>Best unbiased estimator (UMVUE, uniform minimum variance unbiased estimator)</li>
-<li>Cramer-Rao inequality</li>
-</ul>
-</div>
-<div id="three-principles-of-data-reduction" class="section level2 unnumbered hasAnchor">
-<h2>Three Principles of data reduction<a href="sufficient-statistics十分統計量.html#three-principles-of-data-reduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<li>Delta method</li>
+<li>Asymptotic evaluations of point estimator (MLE)
 <ul>
-<li>Sufficiency principle</li>
-<li>Likelihood principle</li>
-<li>Equivariance principle
-<ul>
-<li>Formal sufficiency principle</li>
-<li>Conditional principle</li>
-<li>Formal likelihood principle
-<ul>
-<li>Formal likelihood principle corollary</li>
+<li>Consistency</li>
+<li>Efficiency</li>
+<li>ARE: asymptotic relative efficiency (pp.473~)</li>
 </ul></li>
-</ul></li>
+<li>Loss function</li>
 </ul>
 </div>
-<div id="sufficiency-principle-pp.272" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Sufficiency Principle (pp.272~)<a href="sufficient-statistics十分統計量.html#sufficiency-principle-pp.272" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="bootstrap-pp.478" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Bootstrap (pp.478~)<a href="bootstrap-robustness-m-estimator.html#bootstrap-pp.478" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Principle</li>
-</ul>
-<div id="sufficient-statistics-十分統計量" class="section level3 hasAnchor" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Sufficient statistics 十分統計量<a href="sufficient-statistics十分統計量.html#sufficient-statistics-%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>定義</li>
-</ul>
-<div id="sufficient-statisticsに関する定理" class="section level4 hasAnchor" number="4.1.1.1">
-<h4><span class="header-section-number">4.1.1.1</span> Sufficient Statisticsに関する定理<a href="sufficient-statistics十分統計量.html#sufficient-statistics%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>例：Binomial, Normal, Order statistics</li>
+<li>Nonparametric bootstrap</li>
+<li>Parametric bootstrap</li>
 </ul>
 </div>
-<div id="factorization-theorem-分解定理" class="section level4 hasAnchor" number="4.1.1.2">
-<h4><span class="header-section-number">4.1.1.2</span> Factorization Theorem 分解定理<a href="sufficient-statistics十分統計量.html#factorization-theorem-%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="robustness" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Robustness<a href="bootstrap-robustness-m-estimator.html#robustness" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>例：Normal, Uniform, Normal considering 2 parameters</li>
+<li>Robust estimator</li>
+<li>Robustness</li>
+<li>Mean and median</li>
 </ul>
-</div>
-<div id="exponential-family-に関する定理" class="section level4 hasAnchor" number="4.1.1.3">
-<h4><span class="header-section-number">4.1.1.3</span> Exponential family に関する定理<a href="sufficient-statistics十分統計量.html#exponential-family-%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-</div>
-<div id="minimal-sufficient-statistics-最小十分統計量" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Minimal sufficient statistics 最小十分統計量<a href="sufficient-statistics十分統計量.html#minimal-sufficient-statistics-%E6%9C%80%E5%B0%8F%E5%8D%81%E5%88%86%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="m-estimator" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> M-estimator<a href="bootstrap-robustness-m-estimator.html#m-estimator" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>定義</li>
-<li>例：Normal</li>
-</ul>
-<div id="minimal-sufficient-statisticsに関する定理" class="section level4 hasAnchor" number="4.1.2.1">
-<h4><span class="header-section-number">4.1.2.1</span> Minimal Sufficient Statisticsに関する定理<a href="sufficient-statistics十分統計量.html#minimal-sufficient-statistics%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9A%E7%90%86" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>例：Normal, Uniform</li>
+<li>Huber estimator</li>
+<li>Limiting distribution, ARE of Huber estimator</li>
 </ul>
 </div>
 </div>
-<div id="ancillary-statistics-補助統計量" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Ancillary Statistics 補助統計量<a href="sufficient-statistics十分統計量.html#ancillary-statistics-%E8%A3%9C%E5%8A%A9%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="application" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Application<a href="bootstrap-robustness-m-estimator.html#application" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>定義</li>
-<li>例：Uniform, Location family, Scale family</li>
-</ul>
-</div>
-<div id="complete-statistics-完全統計量" class="section level3 hasAnchor" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> Complete Statistics 完全統計量<a href="sufficient-statistics十分統計量.html#complete-statistics-%E5%AE%8C%E5%85%A8%E7%B5%B1%E8%A8%88%E9%87%8F" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Sufficient, Ancillary, Complete の定義</li>
-<li>Complete Statistics定義</li>
-<li>例：Binomial, Uniform</li>
-</ul>
-<div id="basus-theorem-ancillary-statistics-bot-complete-and-minimal-sufficient-statistics" class="section level4 hasAnchor" number="4.1.4.1">
-<h4><span class="header-section-number">4.1.4.1</span> Basu’s Theorem (Ancillary Statistics <span class="math inline">\(\bot\)</span> Complete and minimal sufficient Statistics)<a href="sufficient-statistics十分統計量.html#basus-theorem-ancillary-statistics-bot-complete-and-minimal-sufficient-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="定理exponential-family" class="section level4 hasAnchor" number="4.1.4.2">
-<h4><span class="header-section-number">4.1.4.2</span> 定理（Exponential family）<a href="sufficient-statistics十分統計量.html#%E5%AE%9A%E7%90%86exponential-family" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>例：<span class="math inline">\(E(g(\bf X))\)</span>, <span class="math inline">\(\bar X\bot S^2\)</span></li>
-</ul>
-</div>
-<div id="定理complete-statistics-rightarrow-minimal-sufficient-statistics" class="section level4 hasAnchor" number="4.1.4.3">
-<h4><span class="header-section-number">4.1.4.3</span> 定理（Complete Statistics <span class="math inline">\(\rightarrow\)</span> Minimal sufficient statistics）<a href="sufficient-statistics十分統計量.html#%E5%AE%9A%E7%90%86complete-statistics-rightarrow-minimal-sufficient-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-</div>
-</div>
-<div id="likelihood-principle" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Likelihood Principle<a href="sufficient-statistics十分統計量.html#likelihood-principle" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="likelihood-function" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Likelihood function<a href="sufficient-statistics十分統計量.html#likelihood-function" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>定義</li>
-<li>例：Negative Binomial</li>
-</ul>
-<div id="likelihood-principle-尤度原理" class="section level4 hasAnchor" number="4.2.1.1">
-<h4><span class="header-section-number">4.2.1.1</span> Likelihood Principle 尤度原理<a href="sufficient-statistics十分統計量.html#likelihood-principle-%E5%B0%A4%E5%BA%A6%E5%8E%9F%E7%90%86" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>例：Normal fiducial dist.</li>
-</ul>
-</div>
-<div id="evidence-function" class="section level4 hasAnchor" number="4.2.1.2">
-<h4><span class="header-section-number">4.2.1.2</span> Evidence function*<a href="sufficient-statistics十分統計量.html#evidence-function" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Formal sufficiency principle</li>
-<li>Conditional principle
-<ul>
-<li>Binomial, negative binomial</li>
-</ul></li>
-<li>Formal likelihood principle</li>
-<li>Likelihood principle corollary</li>
-<li>Birnbaum’ theorem
-<ul>
-<li>例</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="equivariance-principle-同変原則" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Equivariance Principle 同変原則*<a href="sufficient-statistics十分統計量.html#equivariance-principle-%E5%90%8C%E5%A4%89%E5%8E%9F%E5%89%87" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Equivarianceの定義
-<ul>
-<li>Measurement equivariance 測定同変性, formal invariance 形式的不変性</li>
-</ul></li>
-<li>Equivariance Principle
-<ul>
-<li>Binomial</li>
-</ul></li>
-</ul>
-<div id="a-group-of-transformation" class="section level3 hasAnchor" number="4.3.1">
-<h3><span class="header-section-number">4.3.1</span> A group of transformation*<a href="sufficient-statistics十分統計量.html#a-group-of-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>例</li>
-</ul>
-</div>
-<div id="invariant-under-the-group" class="section level3 hasAnchor" number="4.3.2">
-<h3><span class="header-section-number">4.3.2</span> Invariant under the group*<a href="sufficient-statistics十分統計量.html#invariant-under-the-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Normal location invariant</li>
-<li>例：binomial Bayes estimator(pp.332)</li>
-</ul>
-</div>
-</div>
-<div id="応用-3" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> 応用<a href="sufficient-statistics十分統計量.html#%E5%BF%9C%E7%94%A8-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>MLE, Bayesian Inference: remove as much data as possible from the likelihood</li>
-<li>Find UMVUE (uniformly minimum variance unbiased estimator)
-<ul>
-<li>Unbiased + Sufficient <span class="math inline">\(\Rightarrow\)</span> Uniformly better unbiased estimator (Rao-Blackwell Theorem, pp. 342)</li>
-<li>Unbiased + Sufficient + Complete <span class="math inline">\(\Rightarrow\)</span> Uniformly best unbiased estimator (Lehmann-Scheffé theorem ,pp.369)</li>
-</ul></li>
-<li>Likelihood ratio test</li>
-<li>Location-Scale family</li>
+<li>Bootstrap: derive the numerical CI</li>
+<li><a href="https://danielbaissa.com/intro_to_stats/robust-estimation-dealing-with-outliers-and-heavy-tails">Robust Estimation: Dealing with Outliers and Heavy Tails</a></li>
 </ul>
 
 </div>
@@ -442,8 +319,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="order-statistics順序統計量.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="generating-a-random-sample乱数の生成.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="loss-function-optimality.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

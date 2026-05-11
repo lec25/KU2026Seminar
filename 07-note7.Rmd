@@ -1,0 +1,32 @@
+# Bootstrap, robustness, M-estimator
+
+## Review{-}
+
+- Delta method
+- Asymptotic evaluations of point estimator (MLE)
+  - Consistency
+  - Efficiency
+  - ARE: asymptotic relative efficiency (pp.473~)
+- Loss function
+
+## Bootstrap (pp.478~)
+
+- Nonparametric bootstrap
+- Parametric bootstrap
+
+## Robustness
+
+- Robust estimator
+- Robustness
+- Mean and median
+
+### M-estimator
+
+- Huber estimator
+- Limiting distribution, ARE of Huber estimator
+
+## Application
+
+- Bootstrap: derive the numerical CI
+- [Robust Estimation: Dealing with Outliers and Heavy Tails](https://danielbaissa.com/intro_to_stats/robust-estimation-dealing-with-outliers-and-heavy-tails)
+
