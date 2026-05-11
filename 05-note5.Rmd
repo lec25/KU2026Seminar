@@ -32,7 +32,7 @@
 ### Accept/Reject Algorithm
 
 - 例：Beta RV
-  - See a good reference here: https://rh8liuqy.github.io/Accept_reject.html
+  - See some reference here: https://rh8liuqy.github.io/Accept_reject.html
 
 - Metropolis Algorithm
   - See some reference here: https://python-bloggers.com/2024/09/introduction-to-markov-chain-monte-carlo-the-metropolis-hastings-algorithm/
