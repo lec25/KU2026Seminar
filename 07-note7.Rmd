@@ -8,6 +8,7 @@
   - Efficiency
   - ARE: asymptotic relative efficiency (pp.473~)
 - Loss function
+- Counting (pp.14~16)
 
 ## Bootstrap (pp.478~)
 
