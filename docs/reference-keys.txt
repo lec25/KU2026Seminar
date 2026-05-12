@@ -20,7 +20,6 @@ order-statistics順序統計量
 定理2順序統計量のcdf-pdf導出
 定理3順序統計量のjoint-cdf-pdf
 コメント-2
-参考資料-1
 sufficient-statistics十分統計量
 sufficiency-principle-pp.272
 sufficient-statistics-十分統計量
@@ -41,14 +40,11 @@ evidence-function
 equivariance-principle-同変原則
 a-group-of-transformation
 invariant-under-the-group
-応用-3
-参考資料-2
 generating-a-random-sample乱数の生成
 例-exponential-lifetime-pp.245
 直接法
 間接法
 acceptreject-algorithm
-参考資料-3
 loss-function-optimality
 decision-theory-pp.348
 bayes-risk

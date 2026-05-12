@@ -44,6 +44,6 @@
   - STAN programming: https://mc-stan.org/docs/reference-manual/mcmc.html
   - Using R: https://jtr13.github.io/cc20/a-basic-introduction-to-markov-chain-monte-carlo-method-in-r.html
   
-## 参考資料
+## 参考資料{-}
 
 - [べイジア統計解析の実際-MCMC](5/MCMC-Bayes.pdf)

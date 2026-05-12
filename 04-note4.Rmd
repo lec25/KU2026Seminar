@@ -99,7 +99,7 @@
 - 例：binomial Bayes estimator(pp.332)
 
 
-## 応用
+## 応用{-}
 
 - MLE, Bayesian Inference: remove  as much data as possible from the likelihood
 - Find UMVUE (uniformly minimum variance unbiased estimator)
@@ -108,7 +108,7 @@
 - Likelihood ratio test
 - Location-Scale family
 
-## 参考資料
+## 参考資料{-}
 
 - [現代数理統計学の基礎-十分統計量](4/現代数理統計学の基礎-十分統計量.pdf)
 - [現代数理統計学-十分統計量](4/現代数理統計学-十分統計量.pdf)
