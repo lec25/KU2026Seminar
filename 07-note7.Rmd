@@ -25,7 +25,7 @@
 - Huber estimator
 - Limiting distribution, ARE of Huber estimator
 
-## Application
+## Application{-}
 
 - Bootstrap: derive the numerical CI
 - [Robust Estimation: Dealing with Outliers and Heavy Tails](https://danielbaissa.com/intro_to_stats/robust-estimation-dealing-with-outliers-and-heavy-tails)

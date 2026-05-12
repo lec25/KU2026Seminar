@@ -107,3 +107,8 @@
   - Unbiased + Sufficient + Complete $\Rightarrow$ Uniformly best unbiased estimator (Lehmann-Scheffé theorem ,pp.369)
 - Likelihood ratio test
 - Location-Scale family
+
+## 参考資料
+
+- [現代数理統計学の基礎-十分統計量](4/現代数理統計学の基礎-十分統計量.pdf)
+- [現代数理統計学-十分統計量](4/現代数理統計学-十分統計量.pdf)

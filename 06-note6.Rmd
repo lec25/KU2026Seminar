@@ -1,6 +1,6 @@
 # Loss function optimality
 
-## 復習{-}
+## Review{-}
 
 - Mean square error
 
@@ -29,9 +29,14 @@
 ## Loss function optimal in interval estimation* (pp.449~451)
 
 
-## 応用
+## Applications{-}
 
 - Machine learning: see a review here https://arxiv.org/pdf/2504.04242v1
 
   - E.g., loss function in linear regression: Residual Sum of Squares (RSS) $\rightarrow$ OLS
     - Some methods that numerically find the minimum of a loss function: Newton-Raphson, gradient descent, backpropagation
+
+## Supplementary files{-}
+
+- [Loss function and so forth](6/loss-function-random-sample.pdf)
+- [Decision theory](6/decision_theory_slides.pdf)
