@@ -16,9 +16,9 @@ site: bookdown::bookdown_site
 
 # 資料{-}
 
-## スケジュール{-}
+<!-- ## スケジュール{-} -->
 
-[Click here to download XLSX](Schedule2026.xlsx) 
+<!-- [Click here to download XLSX](Schedule2026.xlsx)  -->
 
 <!-- ## ゼミの資料（毎週更新）{-} -->
 
